@@ -1,0 +1,180 @@
+1
+00:00:00,000 --> 00:00:05,145
+Let's go back to the sales leads data set that we reviewed earlier and demoed loading.
+
+2
+00:00:05,145 --> 00:00:08,310
+While there are many columns that are useful to the sales team,
+
+3
+00:00:08,310 --> 00:00:13,215
+we just need a few columns to be available for a bigger corporate forecasting projection.
+
+4
+00:00:13,215 --> 00:00:15,660
+We'll go ahead and delete customer names,
+
+5
+00:00:15,660 --> 00:00:19,575
+emails, gender, and any other fields that won't be useful.
+
+6
+00:00:19,575 --> 00:00:21,915
+For the purposes of this exercise,
+
+7
+00:00:21,915 --> 00:00:26,080
+I'm just going to go ahead and delete columns from the data set I don't need,
+
+8
+00:00:26,080 --> 00:00:27,705
+which will be most of these.
+
+9
+00:00:27,705 --> 00:00:29,955
+We'll just leave company, product name,
+
+10
+00:00:29,955 --> 00:00:33,430
+date of contact, and prospective sales.
+
+11
+00:00:33,650 --> 00:00:39,090
+Prospective sales and date of contact are right here.
+
+12
+00:00:39,090 --> 00:00:41,480
+If I look towards the beginning,
+
+13
+00:00:41,480 --> 00:00:48,210
+I can see company right here.
+
+14
+00:00:48,210 --> 00:00:52,310
+There are two ways I can go about deleting columns that I don't need.
+
+15
+00:00:52,310 --> 00:00:56,185
+Option 1 is to delete a small number of columns.
+
+16
+00:00:56,185 --> 00:00:58,720
+Say, I want to delete these first three.
+
+17
+00:00:58,720 --> 00:01:01,340
+I'm going to select them, what I did just now,
+
+18
+00:01:01,340 --> 00:01:04,460
+is I held down the shift key when I started with
+
+19
+00:01:04,460 --> 00:01:08,520
+prospective customer as I selected last name.
+
+20
+00:01:08,520 --> 00:01:13,640
+Then I'm just going to right-click and I'm going to remove the columns.
+
+21
+00:01:13,640 --> 00:01:16,940
+There we have our applied step right here.
+
+22
+00:01:16,940 --> 00:01:17,965
+As you can see,
+
+23
+00:01:17,965 --> 00:01:20,635
+they disappeared from the table.
+
+24
+00:01:20,635 --> 00:01:23,570
+The query that we're working in.
+
+25
+00:01:23,570 --> 00:01:28,045
+Option 2 is when you want to delete a high number of columns.
+
+26
+00:01:28,045 --> 00:01:30,895
+You select the columns you want to keep,
+
+27
+00:01:30,895 --> 00:01:34,850
+and then you choose the option to delete the other columns.
+
+28
+00:01:34,850 --> 00:01:38,610
+Here I'm going to hold down the control button and I'm going to
+
+29
+00:01:38,610 --> 00:01:44,620
+select company, product name,
+
+30
+00:01:44,620 --> 00:01:47,920
+which in this case is called product of interest,
+
+31
+00:01:47,920 --> 00:01:51,170
+then date of contact,
+
+32
+00:01:51,170 --> 00:01:54,025
+and prospective sales value.
+
+33
+00:01:54,025 --> 00:01:58,585
+I have those columns selected and I'm going to
+
+34
+00:01:58,585 --> 00:02:03,370
+right-click here and see how instead of remove columns,
+
+35
+00:02:03,370 --> 00:02:05,980
+there's another option that says remove other columns.
+
+36
+00:02:05,980 --> 00:02:07,885
+I'm going to click that.
+
+37
+00:02:07,885 --> 00:02:13,735
+All I have left are the five that I initially wanted, and somehow e-mail.
+
+38
+00:02:13,735 --> 00:02:18,490
+Right-click, select remove, delete just one column,
+
+39
+00:02:18,490 --> 00:02:20,255
+and here we are; company,
+
+40
+00:02:20,255 --> 00:02:23,980
+product of interest, date of contact, prospective sales, value.
+
+41
+00:02:23,980 --> 00:02:26,410
+Note that each time you make a change,
+
+42
+00:02:26,410 --> 00:02:31,435
+this lovely Applied Steps section continues to document each step.
+
+43
+00:02:31,435 --> 00:02:33,510
+If I wanted to remove them,
+
+44
+00:02:33,510 --> 00:02:37,770
+all I have to do is click right here,
+
+45
+00:02:39,640 --> 00:02:45,390
+and those columns that were part of that step for removal have popped right back.
+

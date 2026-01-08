@@ -1,0 +1,292 @@
+1
+00:00:00,000 --> 00:00:03,270
+In this exercise, I asked you to first download
+
+2
+00:00:03,270 --> 00:00:07,080
+both Week 1 sales and the customer rewards Excel documents,
+
+3
+00:00:07,080 --> 00:00:12,205
+leave them in the downloads folder and import each into power BI's Power Query.
+
+4
+00:00:12,205 --> 00:00:15,334
+Let me show you first how I did this myself.
+
+5
+00:00:15,334 --> 00:00:20,090
+First, I opened up Power BI and I used the initial screen to get data.
+
+6
+00:00:20,090 --> 00:00:21,995
+If you close out of your screen,
+
+7
+00:00:21,995 --> 00:00:23,915
+when you first open up Power BI,
+
+8
+00:00:23,915 --> 00:00:28,575
+you can always bring it back by hitting this button here, for "Get data".
+
+9
+00:00:28,575 --> 00:00:34,310
+We now navigate to the Excel option on the get data list and hit "Connect".
+
+10
+00:00:34,310 --> 00:00:38,550
+Now I'm going to move to my downloads folder.
+
+11
+00:00:38,900 --> 00:00:42,760
+I'll select Customer Rewards,
+
+12
+00:00:43,310 --> 00:00:46,155
+then I select the Table,
+
+13
+00:00:46,155 --> 00:00:48,120
+and I'll select Transform.
+
+14
+00:00:48,120 --> 00:00:50,415
+Here on the Power Query Editor,
+
+15
+00:00:50,415 --> 00:00:52,730
+I'm going to take the same steps,
+
+16
+00:00:52,730 --> 00:00:57,320
+but I'm going to use this button on the Home ribbon called New Source,
+
+17
+00:00:57,320 --> 00:00:59,415
+select Excel as well,
+
+18
+00:00:59,415 --> 00:01:02,950
+and I'll select Week 1 Sales from here,
+
+19
+00:01:02,960 --> 00:01:05,450
+choosing the relevant section,
+
+20
+00:01:05,450 --> 00:01:09,420
+which for this is just one for Week 1 sales.
+
+21
+00:01:10,520 --> 00:01:15,210
+Here you can see the second query readily available.
+
+22
+00:01:15,260 --> 00:01:19,490
+Next, I asked you to create a dedicated folder and move
+
+23
+00:01:19,490 --> 00:01:23,690
+the two files from the downloads folder for safekeeping,
+
+24
+00:01:23,690 --> 00:01:25,385
+which when I make this change,
+
+25
+00:01:25,385 --> 00:01:28,955
+will of course trigger an alert from Power BI.
+
+26
+00:01:28,955 --> 00:01:31,280
+Now that I've moved them both,
+
+27
+00:01:31,280 --> 00:01:34,370
+when I select Refresh, we get an error.
+
+28
+00:01:34,370 --> 00:01:38,885
+I rather cruelly set you up to run into an error at the end of this exercise,
+
+29
+00:01:38,885 --> 00:01:44,270
+one of the first things that I've noticed tends to really trip up new users in Power BI,
+
+30
+00:01:44,270 --> 00:01:45,860
+is when the data source changes,
+
+31
+00:01:45,860 --> 00:01:47,525
+but you're not sure how to fix it.
+
+32
+00:01:47,525 --> 00:01:50,450
+This is one of those micro skills that I think
+
+33
+00:01:50,450 --> 00:01:53,375
+sometimes gets overlooked when you're learning Power BI.
+
+34
+00:01:53,375 --> 00:01:57,050
+I wanted to give you a little hands-on experience on how it can
+
+35
+00:01:57,050 --> 00:02:01,090
+easily happen and how you can easily fix it.
+
+36
+00:02:01,090 --> 00:02:03,160
+Step 1, with the error message,
+
+37
+00:02:03,160 --> 00:02:04,850
+is not to panic.
+
+38
+00:02:04,850 --> 00:02:06,950
+There are a few different ways we can tackle this,
+
+39
+00:02:06,950 --> 00:02:09,334
+but first is to read the details.
+
+40
+00:02:09,334 --> 00:02:14,600
+We can see here that the datasource error listed is they can't find the file.
+
+41
+00:02:14,600 --> 00:02:17,945
+We have several different ways we can update this.
+
+42
+00:02:17,945 --> 00:02:20,510
+The most obvious is the go-to error,
+
+43
+00:02:20,510 --> 00:02:25,190
+which in this case wasn't super helpful.
+
+44
+00:02:25,190 --> 00:02:28,730
+We can see here that this is where it's
+
+45
+00:02:28,730 --> 00:02:32,600
+looking for the file that we're going to use for this query.
+
+46
+00:02:32,600 --> 00:02:34,445
+It's still not quite right.
+
+47
+00:02:34,445 --> 00:02:38,785
+To fix this, we can go to the source which is right here,
+
+48
+00:02:38,785 --> 00:02:41,460
+and we can browse.
+
+49
+00:02:41,460 --> 00:02:46,655
+Instead of going to the Downloads folder where it's looking for it and can't find it,
+
+50
+00:02:46,655 --> 00:02:50,370
+we're going to go to the folder where we saved it,
+
+51
+00:02:53,270 --> 00:02:56,415
+and the error disappears.
+
+52
+00:02:56,415 --> 00:03:00,305
+You can see the data is all right here as you'd expect.
+
+53
+00:03:00,305 --> 00:03:04,040
+If we run the same refresh on the first table,
+
+54
+00:03:04,040 --> 00:03:05,405
+we get the same problem.
+
+55
+00:03:05,405 --> 00:03:09,050
+I want to show you another way that you can fix this.
+
+56
+00:03:09,050 --> 00:03:13,415
+I like to use this option if you have multiple errors that have popped up.
+
+57
+00:03:13,415 --> 00:03:16,085
+This lists all of them together.
+
+58
+00:03:16,085 --> 00:03:19,640
+I'm just going to select the one that I want to fix,
+
+59
+00:03:19,640 --> 00:03:24,995
+choose Change Source, and then I'm going to perform the exact same steps.
+
+60
+00:03:24,995 --> 00:03:28,340
+Previously it was looking for it in downloads,
+
+61
+00:03:28,340 --> 00:03:32,520
+now I'm asking to look for it in my lesson 3 file.
+
+62
+00:03:35,870 --> 00:03:40,030
+Close and refresh.
+
+63
+00:03:42,230 --> 00:03:46,205
+Since source file locations and names are subject to change,
+
+64
+00:03:46,205 --> 00:03:50,165
+this is going to be important for you to know throughout your Power BI career.
+
+65
+00:03:50,165 --> 00:03:53,525
+Though, I expect it will come in handy through this course as well.
+
+66
+00:03:53,525 --> 00:03:55,100
+At the end of each exercise,
+
+67
+00:03:55,100 --> 00:03:58,115
+we have a solutions PBIX file for your reference,
+
+68
+00:03:58,115 --> 00:04:00,925
+and you can always use that to start your next exercise,
+
+69
+00:04:00,925 --> 00:04:02,585
+but each time you do so,
+
+70
+00:04:02,585 --> 00:04:06,905
+you need to update the source link to access your own desktop file.
+
+71
+00:04:06,905 --> 00:04:10,280
+Otherwise, it's going to keep trying to connect to my C drive.
+
+72
+00:04:10,280 --> 00:04:12,530
+If you forget how to make this fix later,
+
+73
+00:04:12,530 --> 00:04:16,770
+you can always come back to the solution in the course for reference.
+

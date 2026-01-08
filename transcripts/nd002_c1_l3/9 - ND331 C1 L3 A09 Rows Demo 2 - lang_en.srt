@@ -1,0 +1,180 @@
+1
+00:00:00,000 --> 00:00:03,315
+Let's head back to Power BI to look at a different query
+
+2
+00:00:03,315 --> 00:00:06,675
+with the opposite problem that we saw in the earlier demo.
+
+3
+00:00:06,675 --> 00:00:08,685
+Now we have too many rows.
+
+4
+00:00:08,685 --> 00:00:11,040
+Here you can see as we scroll down,
+
+5
+00:00:11,040 --> 00:00:15,350
+there are a bunch of rows that have null values at the bottom,
+
+6
+00:00:15,350 --> 00:00:19,935
+and we don't want to load them into our data model for many reasons.
+
+7
+00:00:19,935 --> 00:00:23,130
+One of them is that keys can't have null values,
+
+8
+00:00:23,130 --> 00:00:26,265
+so that would cause trouble with connecting to things.
+
+9
+00:00:26,265 --> 00:00:28,800
+But the other is nulls take up space,
+
+10
+00:00:28,800 --> 00:00:32,145
+and we don't want them adding to the weight of our data model.
+
+11
+00:00:32,145 --> 00:00:37,005
+What we're going to do is head up to the top,
+
+12
+00:00:37,005 --> 00:00:39,255
+and we're going to select "Remove Rows".
+
+13
+00:00:39,255 --> 00:00:43,530
+We can try using Remove Blank Rows, see how that did.
+
+14
+00:00:43,530 --> 00:00:50,910
+Apparently, only three of the four are showing up as null, so that won't work.
+
+15
+00:00:50,910 --> 00:00:56,150
+The next thing we can try is removing them from the bottom.
+
+16
+00:00:56,150 --> 00:01:00,990
+Remove rows and you choose remove bottom rows.
+
+17
+00:01:01,190 --> 00:01:05,810
+I think there are about 20 rows towards the bottom,
+
+18
+00:01:05,810 --> 00:01:07,860
+so let's give that a try.
+
+19
+00:01:08,720 --> 00:01:13,845
+How do we do I missed 1,2,3,4,5,6.
+
+20
+00:01:13,845 --> 00:01:18,080
+Remember how I said earlier that this is tracking everything we do.
+
+21
+00:01:18,080 --> 00:01:20,650
+Up here in the top we can see that step.
+
+22
+00:01:20,650 --> 00:01:24,135
+Remove last number, so remove rows,
+
+23
+00:01:24,135 --> 00:01:26,595
+so we'll add 26.
+
+24
+00:01:26,595 --> 00:01:29,110
+Easy enough to fix.
+
+25
+00:01:29,150 --> 00:01:31,515
+This is a good start.
+
+26
+00:01:31,515 --> 00:01:33,544
+What we're going to want to do next,
+
+27
+00:01:33,544 --> 00:01:37,510
+is go ahead and take this first row which at least has
+
+28
+00:01:37,510 --> 00:01:42,970
+our initial value that we want for a customer rewards members.
+
+29
+00:01:42,970 --> 00:01:46,210
+I want to use that as my field header.
+
+30
+00:01:46,210 --> 00:01:48,445
+What I'm going to do,
+
+31
+00:01:48,445 --> 00:01:52,250
+is go to use first row as headers.
+
+32
+00:01:52,250 --> 00:01:54,690
+Great. That's a good start.
+
+33
+00:01:54,690 --> 00:01:58,149
+Now, I'm going to rename each of these columns,
+
+34
+00:01:58,149 --> 00:02:01,630
+and you'll do this just like you're probably familiar with in Excel.
+
+35
+00:02:01,630 --> 00:02:03,300
+You just double click,
+
+36
+00:02:03,300 --> 00:02:08,160
+and we're going to call this customer name.
+
+37
+00:02:08,780 --> 00:02:14,650
+Double click, customer email,
+
+38
+00:02:14,830 --> 00:02:21,785
+double click customer phone number.
+
+39
+00:02:21,785 --> 00:02:25,160
+Now there's one more step that we want to take,
+
+40
+00:02:25,160 --> 00:02:29,585
+and that's to give our query a useful name.
+
+41
+00:02:29,585 --> 00:02:32,690
+It imported Table 1 from the Excel document,
+
+42
+00:02:32,690 --> 00:02:35,900
+but instead, I'm just going to name this customer,
+
+43
+00:02:35,900 --> 00:02:38,620
+so I can find it easily when I need it.
+
+44
+00:02:38,620 --> 00:02:42,920
+There you go. Two queries all cleaned up and ready to be useful.
+
+45
+00:02:42,920 --> 00:02:45,480
+Now, it's your turn to give it a try.
+

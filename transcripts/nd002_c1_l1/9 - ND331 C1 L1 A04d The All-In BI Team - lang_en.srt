@@ -1,0 +1,68 @@
+1
+00:00:00,000 --> 00:00:03,000
+The final scenario all the way at
+
+2
+00:00:03,000 --> 00:00:06,525
+the other end of the spectrum is an All-In BI enterprise.
+
+3
+00:00:06,525 --> 00:00:11,040
+This is where your organization openly values data because of
+
+4
+00:00:11,040 --> 00:00:16,140
+the impact it can have on decision-making and invests in enterprise-level tools.
+
+5
+00:00:16,140 --> 00:00:20,430
+Either it has already created them or it's in the process of doing so.
+
+6
+00:00:20,430 --> 00:00:23,550
+Organizations can centralize power BI report development
+
+7
+00:00:23,550 --> 00:00:25,770
+into one or more dedicated teams,
+
+8
+00:00:25,770 --> 00:00:30,625
+or there can be distributed networks of those who use Power BI throughout the company.
+
+9
+00:00:30,625 --> 00:00:34,415
+Not unlike how almost everyone uses Excel from time to time,
+
+10
+00:00:34,415 --> 00:00:36,785
+even if they're not in accounting or finance,
+
+11
+00:00:36,785 --> 00:00:40,470
+your stakeholders could be anyone with a vested interest in reporting.
+
+12
+00:00:40,470 --> 00:00:42,275
+From a sales lead to the CEO,
+
+13
+00:00:42,275 --> 00:00:45,035
+your key allies will similarly run the gambit,
+
+14
+00:00:45,035 --> 00:00:47,745
+but the keys need still apply.
+
+15
+00:00:47,745 --> 00:00:51,980
+You need people to help you identify and access reliable data source,
+
+16
+00:00:51,980 --> 00:00:56,689
+and you need people to help you understand what the data is telling you,
+
+17
+00:00:56,689 --> 00:00:59,460
+and what it means for decision-making.
+

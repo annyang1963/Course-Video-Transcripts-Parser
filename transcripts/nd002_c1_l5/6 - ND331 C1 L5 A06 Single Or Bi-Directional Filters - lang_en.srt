@@ -1,0 +1,184 @@
+1
+00:00:00,000 --> 00:00:03,060
+With cross-filter directions, we have
+
+2
+00:00:03,060 --> 00:00:07,185
+the option for our filters to be single or bi-directional.
+
+3
+00:00:07,185 --> 00:00:12,524
+A single direction filter is usually our preferred option.
+
+4
+00:00:12,524 --> 00:00:16,200
+The reason is that the filter can be applied in the direction of
+
+5
+00:00:16,200 --> 00:00:21,205
+the relationship from one table to another, reliably and consistently.
+
+6
+00:00:21,205 --> 00:00:24,770
+This really will be your best option in most cases.
+
+7
+00:00:24,770 --> 00:00:28,790
+With both or a bi-directional relationship,
+
+8
+00:00:28,790 --> 00:00:33,245
+by default, the filters can be applied in either direction.
+
+9
+00:00:33,245 --> 00:00:36,845
+This can be okay if you have a small table,
+
+10
+00:00:36,845 --> 00:00:39,620
+but it doesn't necessarily scale and it does have
+
+11
+00:00:39,620 --> 00:00:43,780
+a performance impact that you have to take into account.
+
+12
+00:00:43,780 --> 00:00:45,960
+It's confusing for end-users,
+
+13
+00:00:45,960 --> 00:00:49,175
+and as you add additional tables to your data model,
+
+14
+00:00:49,175 --> 00:00:53,570
+you have to additionally account for this bi-directional component,
+
+15
+00:00:53,570 --> 00:00:57,710
+which can result in odd output for your reports and can be very
+
+16
+00:00:57,710 --> 00:01:02,770
+confusing for those end-users to understand how the information is being applied.
+
+17
+00:01:02,770 --> 00:01:04,790
+If you find that you can't apply
+
+18
+00:01:04,790 --> 00:01:07,595
+a single direction filter to get your desired end results.
+
+19
+00:01:07,595 --> 00:01:11,240
+Start by reviewing the data set first to confirm if indeed the
+
+20
+00:01:11,240 --> 00:01:15,850
+necessary base requirements for a one-to-many relationship are being satisfied.
+
+21
+00:01:15,850 --> 00:01:18,860
+Then review the guidance from Microsoft to
+
+22
+00:01:18,860 --> 00:01:22,510
+see if it makes sense to use a bi-directional filter.
+
+23
+00:01:22,510 --> 00:01:25,340
+A few specific use cases for
+
+24
+00:01:25,340 --> 00:01:29,765
+bi-directional filters include when you have a one-to-one relationship,
+
+25
+00:01:29,765 --> 00:01:31,670
+which we'll discuss in a bit,
+
+26
+00:01:31,670 --> 00:01:34,790
+when you need to bridge tables to be able
+
+27
+00:01:34,790 --> 00:01:37,940
+to ensure that relationships are aligning correctly,
+
+28
+00:01:37,940 --> 00:01:41,855
+such as when you're trying to avoid a many-to-many relationship,
+
+29
+00:01:41,855 --> 00:01:45,535
+and when you might have some unique slicer requirements.
+
+30
+00:01:45,535 --> 00:01:47,630
+Additionally, if you have
+
+31
+00:01:47,630 --> 00:01:53,300
+a dimension-to-dimension analysis where you're using a fact table as your bridge.
+
+32
+00:01:53,300 --> 00:01:57,470
+This is another reason that you may need to use a bi-directional filter.
+
+33
+00:01:57,470 --> 00:02:02,795
+In general, one-to-many relationships moving in a single direction,
+
+34
+00:02:02,795 --> 00:02:05,030
+are going to be our top choice.
+
+35
+00:02:05,030 --> 00:02:07,760
+I love them, and I think most people in
+
+36
+00:02:07,760 --> 00:02:11,545
+the Power BI community do because they're straightforward,
+
+37
+00:02:11,545 --> 00:02:14,375
+they're easy to understand and follow,
+
+38
+00:02:14,375 --> 00:02:17,870
+which is true both for you as you're developing it and your
+
+39
+00:02:17,870 --> 00:02:22,465
+end-users when it comes to interpreting the reports correctly.
+
+40
+00:02:22,465 --> 00:02:27,980
+They're predictable, so you know how the data is going to flow and how it's going to
+
+41
+00:02:27,980 --> 00:02:33,980
+perform based on different filters and measures built on top of the relationship.
+
+42
+00:02:33,980 --> 00:02:37,555
+As I mentioned, they play well with measures.
+
+43
+00:02:37,555 --> 00:02:43,685
+Power BI also does you a favor by validating a one-to-many relationship and alerting
+
+44
+00:02:43,685 --> 00:02:49,640
+you if it's not quite set up to provide the one-to-many relationship that you need,
+
+45
+00:02:49,640 --> 00:02:52,685
+something that doesn't always happen when you have, say,
+
+46
+00:02:52,685 --> 00:02:56,910
+a many-to-many relationship that you're trying to set up instead.
+

@@ -1,0 +1,176 @@
+1
+00:00:00,000 --> 00:00:04,380
+Imagine the head of your company comes into your office really
+
+2
+00:00:04,380 --> 00:00:08,400
+excited about this new report her friend showed her from a different organization.
+
+3
+00:00:08,400 --> 00:00:12,750
+This other CEO has been bragging about how he can track inventory, sales,
+
+4
+00:00:12,750 --> 00:00:14,580
+and profitability on his phone,
+
+5
+00:00:14,580 --> 00:00:18,975
+and how he has all this key information now in the palm of his hand.
+
+6
+00:00:18,975 --> 00:00:23,520
+Now that the big boss at your company knows this is possible, she wants one too.
+
+7
+00:00:23,520 --> 00:00:25,440
+Really who can blame her?
+
+8
+00:00:25,440 --> 00:00:29,940
+Being able to visually analyze your data in one place is the dream.
+
+9
+00:00:29,940 --> 00:00:33,090
+A good visualization is a powerful way to facilitate
+
+10
+00:00:33,090 --> 00:00:37,320
+smart decision-making and identify potential issues early on.
+
+11
+00:00:37,320 --> 00:00:40,575
+There's just one teensy tiny problem.
+
+12
+00:00:40,575 --> 00:00:45,095
+The reality is your company's data is all over the place.
+
+13
+00:00:45,095 --> 00:00:47,765
+As a budding business intelligence professional,
+
+14
+00:00:47,765 --> 00:00:49,430
+you know that your company,
+
+15
+00:00:49,430 --> 00:00:54,100
+like most companies, has relatively low data analytics maturity.
+
+16
+00:00:54,100 --> 00:00:58,730
+The data has to be pulled from a whole bunch of different locations and sources with
+
+17
+00:00:58,730 --> 00:01:04,150
+formats ranging from Hadoop to SQL to Excel, even PDF files.
+
+18
+00:01:04,150 --> 00:01:06,935
+Some companies solve this problem by using
+
+19
+00:01:06,935 --> 00:01:11,450
+a centralized data warehouse to merge data from different teams.
+
+20
+00:01:11,450 --> 00:01:14,255
+But if you're working at a smaller company,
+
+21
+00:01:14,255 --> 00:01:18,200
+it may not be an option to have some fancy centralized data warehouse where
+
+22
+00:01:18,200 --> 00:01:22,910
+all this key information is reliably stored and consistently structured.
+
+23
+00:01:22,910 --> 00:01:26,930
+To be able to create a report like the owner has in mind,
+
+24
+00:01:26,930 --> 00:01:30,200
+you're going to need to take data from each department,
+
+25
+00:01:30,200 --> 00:01:34,205
+like marketing with their Facebook and Salesforce data,
+
+26
+00:01:34,205 --> 00:01:37,160
+finance with their many Excel spreadsheets.
+
+27
+00:01:37,160 --> 00:01:41,135
+IT with their SQL database and research and development,
+
+28
+00:01:41,135 --> 00:01:44,270
+who for some reason are storing things in PDFs,
+
+29
+00:01:44,270 --> 00:01:48,410
+and funnel all of this data together for the report.
+
+30
+00:01:48,410 --> 00:01:51,950
+Somehow, you're going to need to mash up
+
+31
+00:01:51,950 --> 00:01:55,070
+all these different data sources, funnel them together,
+
+32
+00:01:55,070 --> 00:01:59,990
+and somehow do some cleanup where the data quality leaves something to be desired,
+
+33
+00:01:59,990 --> 00:02:02,845
+and finally, create a report.
+
+34
+00:02:02,845 --> 00:02:06,380
+How on earth are you going to tame this mess of data sources and
+
+35
+00:02:06,380 --> 00:02:10,285
+get them all working in harmony to meet your boss's needs?
+
+36
+00:02:10,285 --> 00:02:14,960
+That, my friends, is where preparing and modeling data comes to the rescue.
+
+37
+00:02:14,960 --> 00:02:20,289
+From my perspective, it's where the Power BI software is at its best.
+
+38
+00:02:20,289 --> 00:02:26,030
+With Power BI, we'll see that we can handle a huge variety of data sources.
+
+39
+00:02:26,030 --> 00:02:30,350
+Then it provides us with an inexpensive yet effective option so
+
+40
+00:02:30,350 --> 00:02:31,670
+that we don't need to spend money on
+
+41
+00:02:31,670 --> 00:02:34,850
+a costly solution like a sophisticated data warehouse,
+
+42
+00:02:34,850 --> 00:02:36,245
+let alone the time.
+
+43
+00:02:36,245 --> 00:02:40,160
+Power BI is a powerful tool that will allow you to effectively
+
+44
+00:02:40,160 --> 00:02:44,880
+prepare and model your data regardless of your company's size.
+

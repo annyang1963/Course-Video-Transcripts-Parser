@@ -1,0 +1,70 @@
+,ND,Course,Lesson,Page,Timestamp,Text
+0,nd002,c1,l5,12 - ND331 C1 L5 A12 Implicit DAX - lang_en.srt,"00:01:19,325",the sum symbol sitting next to it on the reporting pin.
+1,nd002,c1,l5,12 - ND331 C1 L5 A12 Implicit DAX - lang_en.srt,"00:03:23,570",something that well touch on as we move through filters in greater detail.
+2,nd002,c1,l5,"10 - ND331 C1 L5 A10 Implicit Dax, Quick Measures And Filters - lang_en.srt","00:01:14,990",a little bit earlier is that the dimensions generally apply
+3,nd002,c1,l5,11 - ND331 C1 L5 A11 Demo 2 - lang_en.srt,"00:01:04,910",something that well discuss a little bit later as we talk through the implicit measures.
+4,nd002,c1,l5,14 - ND331 C1 L5 A13 Quick Measures - lang_en.srt,"00:00:02,475",quick measures are the next level of built-in calculations that you can
+5,nd002,c1,l5,2 - ND331 C1 L5 A02 Demo 1 - lang_en.srt,"00:02:42,520",if i ever want to look at these again and see the details
+6,nd002,c1,l5,5 - ND331 C1 L5 A05 One To Many - lang_en.srt,"00:01:32,240",all those good descriptive details can be listed just once and then
+7,nd002,c1,l5,23 - ND331 C1 L5 A16 Lesson Review - lang_en.srt,"00:02:09,860",next lesson were going to learn how to build on this for those more unusual situations
+8,nd002,c1,l2,10 - ND331 C1 L2 A10 Fact Tables Vs Dimension Tables- - lang_en.srt,"00:00:53,770",if we use the grocery store example from earlier
+9,nd002,c1,l2,10 - ND331 C1 L2 A10 Fact Tables Vs Dimension Tables- - lang_en.srt,"00:00:19,770",consistent granularity or level of detail regarding their data.
+10,nd002,c1,l2,10 - ND331 C1 L2 A10 Fact Tables Vs Dimension Tables- - lang_en.srt,"00:01:39,170",this is okay. fact table data is never experienced without the dimensional details.
+11,nd002,c1,l2,9 - ND331 C1 L2 A09 Defining Key Columns - lang_en.srt,"00:00:12,965",for us to be able to use all the details on the product dimension.
+12,nd002,c1,l2,2 - ND331 C1 L2 A02 Demo - lang_en.srt,"00:02:37,790",well go into this in greater detail later in the lesson
+13,nd002,c1,l2,2 - ND331 C1 L2 A02 Demo - lang_en.srt,"00:03:25,430",additional details about those sales transactions
+14,nd002,c1,l2,8 - ND331 C1 L2 A08 Dimensions - lang_en.srt,"00:02:01,985",i mentioned earlier that you want to have dimensions that are in plain
+15,nd002,c1,l2,13 - ND331 C1 L2 A13 Data Source And Restructuring Possibilities - lang_en.srt,"00:01:31,225",this is where the suggestion i made earlier to
+16,nd002,c1,l2,13 - ND331 C1 L2 A13 Data Source And Restructuring Possibilities - lang_en.srt,"00:01:01,345",next from where can we access the data?
+17,nd002,c1,l2,13 - ND331 C1 L2 A13 Data Source And Restructuring Possibilities - lang_en.srt,"00:00:21,390",started building the intuition exercise.
+18,nd002,c1,l2,11 - ND331 C1 L2 A11 Proving Uni-Table V. Data Model Efficiency With Vertipaq - lang_en.srt,"00:02:16,535",recall earlier was about 6.1 million and now were closer to about 5.5 million.
+19,nd002,c1,l2,11 - ND331 C1 L2 A11 Proving Uni-Table V. Data Model Efficiency With Vertipaq - lang_en.srt,"00:05:07,850",we talked about earlier that beyond column size
+20,nd002,c1,l2,11 - ND331 C1 L2 A11 Proving Uni-Table V. Data Model Efficiency With Vertipaq - lang_en.srt,"00:01:43,900",with all of those very interesting columns detailed out connected
+21,nd002,c1,l3,6 - ND331 C1 L3 A06 Common Transformations- Columns - lang_en.srt,"00:01:24,600",if you find that you need to adjust a transformation that you made earlier on
+22,nd002,c1,l3,6 - ND331 C1 L3 A06 Common Transformations- Columns - lang_en.srt,"00:00:49,940",which well get into during the next lesson.
+23,nd002,c1,l3,6 - ND331 C1 L3 A06 Common Transformations- Columns - lang_en.srt,"00:01:32,570",something well talk about later in this lesson.
+24,nd002,c1,l3,3 - ND331 C1 L3 A03 Power Query Basics Demo - lang_en.srt,"00:00:24,455",potentially even both will drive some of our next steps.
+25,nd002,c1,l3,2 - ND331 C1 L3 A02 Power Query Basics - lang_en.srt,"00:00:00,000",like we discussed earlier
+26,nd002,c1,l3,5 - ND331 C1 L3 A05 Tidying Up The Data - lang_en.srt,"00:01:06,485",for example tracking marketing projects or sales
+27,nd002,c1,l3,14 - ND331 C1 L3 A14 Correct Your M Code - lang_en.srt,"00:02:36,360",next it will provide more specific coordinates for
+28,nd002,c1,l3,14 - ND331 C1 L3 A14 Correct Your M Code - lang_en.srt,"00:03:01,195",then with the next step
+29,nd002,c1,l3,14 - ND331 C1 L3 A14 Correct Your M Code - lang_en.srt,"00:03:56,495",next promoted headers was our first applied step here in green
+30,nd002,c1,l3,14 - ND331 C1 L3 A14 Correct Your M Code - lang_en.srt,"00:01:47,345",it will navigate to the specific source details such as an excel spreadsheet tab.
+31,nd002,c1,l3,7 - ND331 C1 L3 A07 Columns Demo 1 - lang_en.srt,"00:00:08,310",we just need a few columns to be available for a bigger corporate forecasting projection.
+32,nd002,c1,l3,7 - ND331 C1 L3 A07 Columns Demo 1 - lang_en.srt,"00:00:00,000",lets go back to the sales leads data set that we reviewed earlier and demoed loading.
+33,nd002,c1,l3,7 - ND331 C1 L3 A07 Columns Demo 1 - lang_en.srt,"00:00:19,575",for the purposes of this exercise
+34,nd002,c1,l3,12 - ND331 C1 L3 A12 Data Types - lang_en.srt,"00:00:49,460",filter produce based on plu value ranges later on.
+35,nd002,c1,l3,9 - ND331 C1 L3 A09 Rows Demo 2 - lang_en.srt,"00:00:03,315",with the opposite problem that we saw in the earlier demo.
+36,nd002,c1,l3,9 - ND331 C1 L3 A09 Rows Demo 2 - lang_en.srt,"00:01:13,845",remember how i said earlier that this is tracking everything we do.
+37,nd002,c1,l3,9 - ND331 C1 L3 A09 Rows Demo 2 - lang_en.srt,"00:00:50,910",the next thing we can try is removing them from the bottom.
+38,nd002,c1,l3,4 - ND331 C1 L3 A04 Demo 2 - lang_en.srt,"00:03:24,995",previously it was looking for it in downloads
+39,nd002,c1,l3,4 - ND331 C1 L3 A04 Demo 2 - lang_en.srt,"00:01:15,260",next i asked you to create a dedicated folder and move
+40,nd002,c1,l3,4 - ND331 C1 L3 A04 Demo 2 - lang_en.srt,"00:03:58,115",and you can always use that to start your next exercise
+41,nd002,c1,l3,4 - ND331 C1 L3 A04 Demo 2 - lang_en.srt,"00:04:10,280",if you forget how to make this fix later
+42,nd002,c1,l3,4 - ND331 C1 L3 A04 Demo 2 - lang_en.srt,"00:02:06,950",but first is to read the details.
+43,nd002,c1,l3,4 - ND331 C1 L3 A04 Demo 2 - lang_en.srt,"00:00:00,000",in this exercise i asked you to first download
+44,nd002,c1,l3,4 - ND331 C1 L3 A04 Demo 2 - lang_en.srt,"00:01:34,370",i rather cruelly set you up to run into an error at the end of this exercise
+45,nd002,c1,l3,4 - ND331 C1 L3 A04 Demo 2 - lang_en.srt,"00:03:53,525",at the end of each exercise
+46,nd002,c1,l3,15 - ND331 C1 L3 A15 M Code Demo - lang_en.srt,"00:02:53,170",we wanted to do so earlier on in
+47,nd002,c1,l3,15 - ND331 C1 L3 A15 M Code Demo - lang_en.srt,"00:02:55,610",our applied steps to cut down on the number of rows earlier.
+48,nd002,c1,l3,17 - ND331 C1 L3 A17 Lesson Review - lang_en.srt,"00:01:45,110",its ready for the more advanced transformation wizardry well be doing later
+49,nd002,c1,l3,1 - ND331 C1 L3 A01 Intro To Get Data And Initial Transformation - - lang_en.srt,"00:01:04,025",next well learn how to tidy up the data to make it easy for you
+50,nd002,c1,l3,1 - ND331 C1 L3 A01 Intro To Get Data And Initial Transformation - - lang_en.srt,"00:02:06,410",getting the data can cause trouble later on when you go to generate your report.
+51,nd002,c1,l3,1 - ND331 C1 L3 A01 Intro To Get Data And Initial Transformation - - lang_en.srt,"00:03:06,080",for the more advanced transformation wizardry well be doing later
+52,nd002,c1,l3,1 - ND331 C1 L3 A01 Intro To Get Data And Initial Transformation - - lang_en.srt,"00:03:22,160",wizardry well be doing later and has
+53,nd002,c1,l1,13 - ND331 C1 L1 A07 When To Use Power BI - lang_en.srt,"00:00:59,855",as weve discussed earlier.
+54,nd002,c1,l1,13 - ND331 C1 L1 A07 When To Use Power BI - lang_en.srt,"00:02:59,915",like i mentioned earlier
+55,nd002,c1,l1,13 - ND331 C1 L1 A07 When To Use Power BI - lang_en.srt,"00:01:16,360",the next layer of power bi desktop is the data model layer.
+56,nd002,c1,l1,13 - ND331 C1 L1 A07 When To Use Power BI - lang_en.srt,"00:00:00,000",were going to spend the rest of this course on the details of how to use power bi.
+57,nd002,c1,l1,13 - ND331 C1 L1 A07 When To Use Power BI - lang_en.srt,"00:03:37,295",you dont need to remember all of these details right now.
+58,nd002,c1,l1,8 - ND331 C1 L1 A04c The Small But Mighty BI Team - lang_en.srt,"00:00:00,000",the next scenario id like to discuss is
+59,nd002,c1,l1,3 - ND331 C1 L1 A03 The Power BI Pipeline - lang_en.srt,"00:00:12,630",lets look at the power bi pipeline in more detail.
+60,nd002,c1,l1,3 - ND331 C1 L1 A03 The Power BI Pipeline - lang_en.srt,"00:01:18,500",something that well discuss in greater detail
+61,nd002,c1,l1,11 - ND331 C1 L1 A05 History Of Power BI - lang_en.srt,"00:01:07,910",a bi project and dont have a formal database to rely on.
+62,nd002,c1,l1,11 - ND331 C1 L1 A05 History Of Power BI - lang_en.srt,"00:01:26,620",a couple years later
+63,nd002,c1,l1,7 - ND331 C1 L1 A04b The Lone Ranger - lang_en.srt,"00:01:30,410",so you can go fast later on.
+64,nd002,c1,l1,5 - ND331 C1 L1 A10 What You'Ll Build - lang_en.srt,"00:00:00,000",in the project at the end of this course
+65,nd002,c1,l1,5 - ND331 C1 L1 A10 What You'Ll Build - lang_en.srt,"00:02:27,230",i designed this project with several of the challenges ive seen
+66,nd002,c1,l1,5 - ND331 C1 L1 A10 What You'Ll Build - lang_en.srt,"00:02:35,045",when youre finished with this project
+67,nd002,c1,l1,4 - ND331 C1 L1 A11 Course Review - lang_en.srt,"00:02:32,155",next well get into bigger transformations.
+68,nd002,c1,l1,4 - ND331 C1 L1 A11 Course Review - lang_en.srt,"00:04:06,035",next well go into relationships and dax.

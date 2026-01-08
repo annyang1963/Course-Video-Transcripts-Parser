@@ -1,0 +1,192 @@
+1
+00:00:00,000 --> 00:00:03,090
+To better understand the components of a data model,
+
+2
+00:00:03,090 --> 00:00:06,680
+let's first talk about what not to do when creating your data model.
+
+3
+00:00:06,680 --> 00:00:08,820
+I call this the uni-table.
+
+4
+00:00:08,820 --> 00:00:10,785
+If you're coming from an Excel background,
+
+5
+00:00:10,785 --> 00:00:14,790
+your first instinct when modeling data is probably going to be to
+
+6
+00:00:14,790 --> 00:00:19,950
+create an extremely wide table with all the aggregatable fields,
+
+7
+00:00:19,950 --> 00:00:22,965
+and all of the descriptive fields mushed together.
+
+8
+00:00:22,965 --> 00:00:27,930
+For example, here, amount is an aggregatable field,
+
+9
+00:00:27,930 --> 00:00:33,660
+we could aggregate the amount by getting a sum of the total number of apples sold,
+
+10
+00:00:33,660 --> 00:00:35,805
+which in this example would be two.
+
+11
+00:00:35,805 --> 00:00:39,915
+In contrast, variety is a descriptive field,
+
+12
+00:00:39,915 --> 00:00:42,240
+we can't add Gala and Fuji,
+
+13
+00:00:42,240 --> 00:00:45,620
+rather, these fields help us describe the other data.
+
+14
+00:00:45,620 --> 00:00:49,945
+For example, they allow us to know that of the two apples sold,
+
+15
+00:00:49,945 --> 00:00:52,935
+one was a Gala and one was a Fuji.
+
+16
+00:00:52,935 --> 00:00:58,220
+It's likely that your data didn't all come as a single big table like this.
+
+17
+00:00:58,220 --> 00:01:01,085
+But instead, you piece together your mega table using
+
+18
+00:01:01,085 --> 00:01:06,860
+one or more look-ups so that all the values you would need would be on the relevant rows.
+
+19
+00:01:06,860 --> 00:01:08,555
+In a small dataset,
+
+20
+00:01:08,555 --> 00:01:09,995
+you can get away with this,
+
+21
+00:01:09,995 --> 00:01:12,830
+but as the dataset grows over time,
+
+22
+00:01:12,830 --> 00:01:15,690
+it will become impossible to manage.
+
+23
+00:01:15,690 --> 00:01:20,359
+Having everything in a single uni-table is inefficient.
+
+24
+00:01:20,359 --> 00:01:23,540
+Again, what we mean by everything is that you've got
+
+25
+00:01:23,540 --> 00:01:28,135
+both your aggregatable and descriptive data in the same table.
+
+26
+00:01:28,135 --> 00:01:31,595
+This can work okay for small amounts of data,
+
+27
+00:01:31,595 --> 00:01:36,500
+but it gets increasingly efficient as the data grows.
+
+28
+00:01:36,500 --> 00:01:41,570
+I learned this the hard way during the first few months I was using Power BI,
+
+29
+00:01:41,570 --> 00:01:44,120
+my report could handle a month or two of data,
+
+30
+00:01:44,120 --> 00:01:48,680
+but it started to wheeze and freeze once I added several years of data.
+
+31
+00:01:48,680 --> 00:01:52,640
+I ran to IT thinking my computer was broken, where in fact,
+
+32
+00:01:52,640 --> 00:01:57,650
+I was just being very inefficient with the tools I had available.
+
+33
+00:01:57,650 --> 00:02:01,535
+What's the problem? Why do we lose efficiency
+
+34
+00:02:01,535 --> 00:02:05,465
+when we have our descriptive and aggregatable fields all mushed together.
+
+35
+00:02:05,465 --> 00:02:07,970
+The problem is repeat data.
+
+36
+00:02:07,970 --> 00:02:11,990
+Your goal when creating a data model is really just to minimize
+
+37
+00:02:11,990 --> 00:02:17,220
+that repeat data and make the structure of it as efficient as possible.
+
+38
+00:02:18,370 --> 00:02:21,230
+If we go back to our example,
+
+39
+00:02:21,230 --> 00:02:24,275
+we can see that we have multiple purchases that
+
+40
+00:02:24,275 --> 00:02:27,290
+all have the exact same descriptive information.
+
+41
+00:02:27,290 --> 00:02:31,880
+For instance, here are Fuji apples with the same PLU code.
+
+42
+00:02:31,880 --> 00:02:37,640
+This is because all of these rows are for sales where customers bought the same product.
+
+43
+00:02:37,640 --> 00:02:40,534
+Or if we look at the dates,
+
+44
+00:02:40,534 --> 00:02:44,375
+we can see that a lot of these sales happen on only two dates,
+
+45
+00:02:44,375 --> 00:02:47,825
+which all have the exact same data for month and year.
+
+46
+00:02:47,825 --> 00:02:50,480
+This is a lot of repeat data in our model.
+
+47
+00:02:50,480 --> 00:02:52,220
+As the dataset grows,
+
+48
+00:02:52,220 --> 00:02:54,840
+this is only going to get worse.
+

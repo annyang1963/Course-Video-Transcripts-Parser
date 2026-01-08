@@ -1,0 +1,228 @@
+1
+00:00:00,000 --> 00:00:05,220
+Now that we've dispelled the idea that you should just make a big unit table,
+
+2
+00:00:05,220 --> 00:00:09,300
+and we've gotten familiar with fact tables and dimension tables,
+
+3
+00:00:09,300 --> 00:00:13,815
+it's time to learn how to load and transform our data with Power Query.
+
+4
+00:00:13,815 --> 00:00:16,410
+Recall from our Power BI pipeline that this
+
+5
+00:00:16,410 --> 00:00:19,005
+is our starting layer that we'll use to create
+
+6
+00:00:19,005 --> 00:00:24,390
+a data model before generating that user-friendly visual report layer.
+
+7
+00:00:24,390 --> 00:00:28,035
+In this lesson, we'll focus on Power Query.
+
+8
+00:00:28,035 --> 00:00:32,730
+Let's zoom in a bit on this part of the process.
+
+9
+00:00:32,730 --> 00:00:36,560
+First, of course, we need to access the data,
+
+10
+00:00:36,560 --> 00:00:39,800
+and we'll learn how to do this using the Get Data feature.
+
+11
+00:00:39,800 --> 00:00:42,710
+Let's take a look together at the options you have at
+
+12
+00:00:42,710 --> 00:00:46,250
+your fingertips to pull together data from Power BI and discuss
+
+13
+00:00:46,250 --> 00:00:49,340
+some creative approaches you can take if Power BI doesn't
+
+14
+00:00:49,340 --> 00:00:53,675
+already have a ready connection for what you need out of the box.
+
+15
+00:00:53,675 --> 00:00:56,975
+Power BI supports a huge range of data sources.
+
+16
+00:00:56,975 --> 00:01:00,170
+We'll learn about some of these in this lesson as well as where to
+
+17
+00:01:00,170 --> 00:01:04,025
+go to see what additional data sources are available.
+
+18
+00:01:04,025 --> 00:01:08,720
+Next, we'll learn how to tidy up the data to make it easy for you,
+
+19
+00:01:08,720 --> 00:01:14,300
+your end users, and Power BI itself to easily find and use the data you need.
+
+20
+00:01:14,300 --> 00:01:17,210
+The initial data we get from a query
+
+21
+00:01:17,210 --> 00:01:20,795
+before we've tidied it up can have a whole bunch of issues.
+
+22
+00:01:20,795 --> 00:01:23,900
+We'll use some basic transformations to make sure
+
+23
+00:01:23,900 --> 00:01:27,110
+our data is nicely cleaned up and without any clutter.
+
+24
+00:01:27,110 --> 00:01:31,835
+This will involve things like making sure our data is clearly labeled,
+
+25
+00:01:31,835 --> 00:01:34,085
+that we have all the right columns,
+
+26
+00:01:34,085 --> 00:01:37,115
+and that these columns have logical headers,
+
+27
+00:01:37,115 --> 00:01:41,524
+and that we've also removed any null rows that are just taking up space.
+
+28
+00:01:41,524 --> 00:01:45,050
+This queues up our data for either data model usage or
+
+29
+00:01:45,050 --> 00:01:50,110
+the more significant transformations we'll go through in an upcoming lesson.
+
+30
+00:01:50,110 --> 00:01:55,580
+Another important part of preparing our data will involve identifying and using
+
+31
+00:01:55,580 --> 00:02:01,280
+the correct data types so that calculations and visualizations will work as intended.
+
+32
+00:02:01,280 --> 00:02:02,885
+This might sound obvious,
+
+33
+00:02:02,885 --> 00:02:06,410
+but using the wrong data types when you're first
+
+34
+00:02:06,410 --> 00:02:10,970
+getting the data can cause trouble later on when you go to generate your report.
+
+35
+00:02:10,970 --> 00:02:13,295
+To give a really simple example,
+
+36
+00:02:13,295 --> 00:02:16,075
+you might have some sales data like we have here.
+
+37
+00:02:16,075 --> 00:02:20,224
+Suppose you want to add up the subtotals to get the sum of all the sales,
+
+38
+00:02:20,224 --> 00:02:22,880
+but you find that you're unable to sum them and that
+
+39
+00:02:22,880 --> 00:02:27,425
+your only option for aggregating this value is instead by count.
+
+40
+00:02:27,425 --> 00:02:30,530
+The reason is that when you ran your original query,
+
+41
+00:02:30,530 --> 00:02:34,360
+you used the wrong data type for this subtotal column.
+
+42
+00:02:34,360 --> 00:02:37,640
+What looks like a numerical value here or
+
+43
+00:02:37,640 --> 00:02:41,480
+numerical values here are actually stored as text strings.
+
+44
+00:02:41,480 --> 00:02:45,200
+In this lesson, we'll learn how to use the correct data types so we
+
+45
+00:02:45,200 --> 00:02:49,910
+avoid issues like this where having the wrong data type will get in our way.
+
+46
+00:02:49,910 --> 00:02:55,430
+Finally, we'll get into the syntax of the M formula language to help you better
+
+47
+00:02:55,430 --> 00:02:57,650
+understand how to make corrections after
+
+48
+00:02:57,650 --> 00:03:01,705
+the fact once you've made some preliminary transformations.
+
+49
+00:03:01,705 --> 00:03:03,215
+By the end of this lesson,
+
+50
+00:03:03,215 --> 00:03:06,080
+we'll know how to load and tidy up our data so that it's ready
+
+51
+00:03:06,080 --> 00:03:09,260
+for the more advanced transformation wizardry we'll be doing later,
+
+52
+00:03:09,260 --> 00:03:14,255
+and it will have the right structure and data types we need for the final report.
+
+53
+00:03:14,255 --> 00:03:16,445
+By the end of this lesson,
+
+54
+00:03:16,445 --> 00:03:19,160
+we'll know how to load and tidy up our data so
+
+55
+00:03:19,160 --> 00:03:22,160
+that it is ready for the more advanced transformation
+
+56
+00:03:22,160 --> 00:03:25,160
+wizardry we'll be doing later and has
+
+57
+00:03:25,160 --> 00:03:29,670
+the right structure and data types we need for the final report.
+

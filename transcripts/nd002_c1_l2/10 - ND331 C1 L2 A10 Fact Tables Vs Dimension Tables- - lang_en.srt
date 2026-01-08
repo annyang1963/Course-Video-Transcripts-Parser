@@ -1,0 +1,172 @@
+1
+00:00:00,000 --> 00:00:02,115
+When you think fact tables,
+
+2
+00:00:02,115 --> 00:00:05,655
+your goal is to keep them long and thin.
+
+3
+00:00:05,655 --> 00:00:09,495
+A fact table will have one row per event.
+
+4
+00:00:09,495 --> 00:00:12,960
+Think back to that grocery store checkout with each beat
+
+5
+00:00:12,960 --> 00:00:17,100
+creating a new row in your sales transactions fact table.
+
+6
+00:00:17,100 --> 00:00:19,770
+Additionally, fact tables need to have
+
+7
+00:00:19,770 --> 00:00:24,525
+consistent granularity or level of detail regarding their data.
+
+8
+00:00:24,525 --> 00:00:27,510
+You should not have data that summarize a month of
+
+9
+00:00:27,510 --> 00:00:32,325
+transactions mixed in with second-by-second transactions.
+
+10
+00:00:32,325 --> 00:00:36,400
+This creates inconsistencies in how the data can be presented,
+
+11
+00:00:36,400 --> 00:00:41,860
+and can put you at risk of double counting data and other inaccuracies.
+
+12
+00:00:41,860 --> 00:00:47,960
+Fact tables should have one key column for each dimension table that you plan to use.
+
+13
+00:00:47,960 --> 00:00:53,770
+But it's entirely okay and expected for those key column values to repeat.
+
+14
+00:00:53,770 --> 00:00:57,035
+If we use the grocery store example from earlier,
+
+15
+00:00:57,035 --> 00:00:59,915
+you might remember that the sales list of
+
+16
+00:00:59,915 --> 00:01:03,020
+individual item transactions would be your fact table,
+
+17
+00:01:03,020 --> 00:01:07,870
+and sales for Gala apples might show up thousands of times in a given day.
+
+18
+00:01:07,870 --> 00:01:12,650
+So the PLU number for Gala apples would repeat many times.
+
+19
+00:01:12,650 --> 00:01:19,420
+However, you want to minimize adding any additional columns beyond this minimum.
+
+20
+00:01:19,420 --> 00:01:23,810
+Fact tables are high-volume and you want the weight in bytes that
+
+21
+00:01:23,810 --> 00:01:28,790
+the fact table is going to gain over time to be reserved for the additional rows.
+
+22
+00:01:28,790 --> 00:01:31,670
+Note that this can make a fact table hard to
+
+23
+00:01:31,670 --> 00:01:34,460
+read on its own because if you've done your job right,
+
+24
+00:01:34,460 --> 00:01:39,170
+you're essentially stripping it of everything that isn't a number or a key column.
+
+25
+00:01:39,170 --> 00:01:45,420
+This is okay. Fact table data is never experienced without the dimensional details.
+
+26
+00:01:46,370 --> 00:01:51,650
+Dimensions tend to really be the inverse of fact tables.
+
+27
+00:01:51,650 --> 00:01:53,750
+So when you think of dimensions,
+
+28
+00:01:53,750 --> 00:01:55,910
+think short and fat.
+
+29
+00:01:55,910 --> 00:01:57,755
+Unlike the fact table,
+
+30
+00:01:57,755 --> 00:01:59,255
+your dimension table will have
+
+31
+00:01:59,255 --> 00:02:04,880
+just one unique key value listed that corresponds to the fact table.
+
+32
+00:02:04,880 --> 00:02:07,250
+Just like you wouldn't know for sure
+
+33
+00:02:07,250 --> 00:02:09,680
+which Granny Smith apple to buy if you
+
+34
+00:02:09,680 --> 00:02:12,545
+were presented with two options at the grocery store,
+
+35
+00:02:12,545 --> 00:02:15,380
+your data model won't know which key value to
+
+36
+00:02:15,380 --> 00:02:19,180
+attribute transactions to if there's any ambiguity.
+
+37
+00:02:19,180 --> 00:02:25,940
+However, since the dimension table is designed to have as few rows as possible,
+
+38
+00:02:25,940 --> 00:02:31,165
+you can get away with more calculated or conditional columns when you need them.
+
+39
+00:02:31,165 --> 00:02:37,290
+Something you can take advantage of in either a Power Query or index.
+
+40
+00:02:37,290 --> 00:02:42,175
+Additional columns are very cheap in comparison for dimensions.
+
+41
+00:02:42,175 --> 00:02:48,530
+Finally, we want to ensure that we use human friendly column names and values
+
+42
+00:02:48,530 --> 00:02:51,260
+because all of these will be used for
+
+43
+00:02:51,260 --> 00:02:56,400
+the reporting purposes and that is where it's all going to be reflecting.
+

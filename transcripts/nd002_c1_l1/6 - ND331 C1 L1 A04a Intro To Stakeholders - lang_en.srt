@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:03,240
+In this video, I want to talk about the stakeholders,
+
+2
+00:00:03,240 --> 00:00:05,550
+in other words, who you'll be working with.
+
+3
+00:00:05,550 --> 00:00:08,820
+Because creating a Power BI data model and
+
+4
+00:00:08,820 --> 00:00:13,260
+the subsequent reports is as much about people as it is about data.
+
+5
+00:00:13,260 --> 00:00:19,050
+Who your stakeholders will be will depend on your organization size and structure,
+
+6
+00:00:19,050 --> 00:00:21,915
+and their stage of Power BI adoption.
+
+7
+00:00:21,915 --> 00:00:25,440
+It also depends on the size of your data modeling team.
+
+8
+00:00:25,440 --> 00:00:31,020
+How many people will be engaged in data modeling and reporting in report building,
+
+9
+00:00:31,020 --> 00:00:36,020
+which can be anything from a one-person job to a massive team effort.
+
+10
+00:00:36,020 --> 00:00:38,580
+I've sketched out a few common scenarios,
+
+11
+00:00:38,580 --> 00:00:42,160
+though yours will probably fall somewhere in the middle.
+

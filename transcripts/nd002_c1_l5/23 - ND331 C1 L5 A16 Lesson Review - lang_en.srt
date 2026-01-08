@@ -1,0 +1,140 @@
+1
+00:00:00,000 --> 00:00:03,060
+So this lesson was all about
+
+2
+00:00:03,060 --> 00:00:07,095
+relationships and filters and the measures that they facilitate.
+
+3
+00:00:07,095 --> 00:00:10,665
+We started by defining different relationship types,
+
+4
+00:00:10,665 --> 00:00:12,435
+also known as cardinality,
+
+5
+00:00:12,435 --> 00:00:15,015
+and the filtering directions of relationships,
+
+6
+00:00:15,015 --> 00:00:19,140
+which play an important role in how data is reflected in reports.
+
+7
+00:00:19,140 --> 00:00:20,540
+As you learned in this lesson,
+
+8
+00:00:20,540 --> 00:00:25,020
+the existence of a relationship doesn't do you any good unless the setup is correct,
+
+9
+00:00:25,020 --> 00:00:29,130
+and even though Power BI will try to recognize relationships on your behalf,
+
+10
+00:00:29,130 --> 00:00:33,330
+it's important to know relationships well enough to determine whether Power BI has
+
+11
+00:00:33,330 --> 00:00:39,010
+helped in the right way or if perhaps you need to make some corrections.
+
+12
+00:00:42,200 --> 00:00:45,080
+We also discussed filtering in
+
+13
+00:00:45,080 --> 00:00:49,220
+a reporting context and the different ways that filters can be applied,
+
+14
+00:00:49,220 --> 00:00:52,430
+layering on top of not only the filtering pane but
+
+15
+00:00:52,430 --> 00:00:57,440
+individual groupings in visuals, slicers, etc.
+
+16
+00:00:57,440 --> 00:01:00,919
+We went through implicit DAX and quick measures,
+
+17
+00:01:00,919 --> 00:01:06,620
+which are the simplest ways to get your calculations into your reporting context,
+
+18
+00:01:06,620 --> 00:01:12,190
+including basic such as some min-max and average on the implicit side,
+
+19
+00:01:12,190 --> 00:01:15,755
+and more advanced quick measures that are still
+
+20
+00:01:15,755 --> 00:01:21,510
+readily available for you to use as is out of the quick measure list.
+
+21
+00:01:21,800 --> 00:01:28,595
+Then we went through the two custom DAX functions that rely on filters the most,
+
+22
+00:01:28,595 --> 00:01:30,715
+which are SUMX and CALCULATE.
+
+23
+00:01:30,715 --> 00:01:34,370
+These are the Swiss Army knife-type custom DAX functions
+
+24
+00:01:34,370 --> 00:01:36,710
+that I lean on time and time again,
+
+25
+00:01:36,710 --> 00:01:40,220
+and that we use in conjunction with filters that we can add
+
+26
+00:01:40,220 --> 00:01:45,175
+into the calculations such as filter, all, and relationship.
+
+27
+00:01:45,175 --> 00:01:48,260
+We also touched a little bit on USERELATIONSHIP,
+
+28
+00:01:48,260 --> 00:01:52,580
+which you would use in a many-to-many context or in circumstances
+
+29
+00:01:52,580 --> 00:01:57,770
+where you might have to leverage an inactive relationship in your model.
+
+30
+00:01:57,770 --> 00:02:02,405
+At this stage, we've gone through building your data model,
+
+31
+00:02:02,405 --> 00:02:05,810
+making a report in the most basic of senses,
+
+32
+00:02:05,810 --> 00:02:08,040
+and creating some custom calculations,
+
+33
+00:02:08,040 --> 00:02:09,860
+so you're off to a great start.
+
+34
+00:02:09,860 --> 00:02:14,300
+Next lesson, we're going to learn how to build on this for those more unusual situations
+
+35
+00:02:14,300 --> 00:02:19,580
+where you need a little bit more of beyond-the-standard star schema.
+

@@ -1,0 +1,212 @@
+1
+00:00:00,000 --> 00:00:05,220
+Hi there. I'm Lenore Flower and I am here to Sherpa you through introduction to
+
+2
+00:00:05,220 --> 00:00:10,695
+preparing and modeling data with Power BI or as I like to think of it, data plumbing.
+
+3
+00:00:10,695 --> 00:00:13,335
+Data modeling is a lot like plumbing.
+
+4
+00:00:13,335 --> 00:00:17,865
+They're both about building the foundation for other key things to work well.
+
+5
+00:00:17,865 --> 00:00:20,475
+In this course, we'll be learning how to
+
+6
+00:00:20,475 --> 00:00:23,864
+connect up everything we need for a good data pipeline,
+
+7
+00:00:23,864 --> 00:00:25,740
+and just like plumbing, none of
+
+8
+00:00:25,740 --> 00:00:29,580
+your reporting end users are going to know anything about it when it's working.
+
+9
+00:00:29,580 --> 00:00:31,965
+But they'll definitely notice when it's not.
+
+10
+00:00:31,965 --> 00:00:37,220
+I like to think of preparing and modeling as the unsung hero in Power BI
+
+11
+00:00:37,220 --> 00:00:39,510
+since it tends to get a little less attention than
+
+12
+00:00:39,510 --> 00:00:42,455
+its more glamorous data visualization layer.
+
+13
+00:00:42,455 --> 00:00:47,225
+Don't get me wrong. Storytelling with data is awesome and absolutely important,
+
+14
+00:00:47,225 --> 00:00:49,895
+but without all the plumbing and prep work underneath,
+
+15
+00:00:49,895 --> 00:00:52,135
+none of those stories would be possible.
+
+16
+00:00:52,135 --> 00:00:57,140
+I was an early adopter of Power BI at my organization where at the time I
+
+17
+00:00:57,140 --> 00:00:58,700
+was looking for ways to better
+
+18
+00:00:58,700 --> 00:01:02,240
+present corporate reporting information as a financial analyst.
+
+19
+00:01:02,240 --> 00:01:04,850
+I quickly became fascinated with how you could mash
+
+20
+00:01:04,850 --> 00:01:08,480
+different data sources together and how learning just enough of some
+
+21
+00:01:08,480 --> 00:01:12,050
+of the key technologies such as Power Query and DAX could
+
+22
+00:01:12,050 --> 00:01:16,360
+set you up to create more complex and powerful analytics when you needed them.
+
+23
+00:01:16,360 --> 00:01:21,050
+As I continued to explore various data sources to enrich my analysis,
+
+24
+00:01:21,050 --> 00:01:26,510
+I realized that Power BI is broadly applicable beyond finance, and to my delight,
+
+25
+00:01:26,510 --> 00:01:29,120
+I also learned that the same technologies I use to
+
+26
+00:01:29,120 --> 00:01:32,225
+transform and model data in Power BI are
+
+27
+00:01:32,225 --> 00:01:35,570
+equally applicable to Excel and even scale up
+
+28
+00:01:35,570 --> 00:01:38,915
+to the enterprise level through Azure tabular data models,
+
+29
+00:01:38,915 --> 00:01:41,420
+which is my primary focus today.
+
+30
+00:01:41,420 --> 00:01:44,000
+While our focus will be on Power BI,
+
+31
+00:01:44,000 --> 00:01:47,300
+a lot of the key concepts I'm going to teach you in this course will
+
+32
+00:01:47,300 --> 00:01:51,470
+also apply to many other data modeling tools.
+
+33
+00:01:51,470 --> 00:01:55,684
+I love that data modeling is scalable as well as flexible
+
+34
+00:01:55,684 --> 00:02:00,130
+and it can be a lot of fun to collaborate with colleagues to solve their challenges.
+
+35
+00:02:00,130 --> 00:02:03,410
+At my day job managing enterprise-level data models,
+
+36
+00:02:03,410 --> 00:02:06,290
+I get to work with a pretty wide web of people to understand
+
+37
+00:02:06,290 --> 00:02:09,380
+what data is needed and how we can get the data plumbing
+
+38
+00:02:09,380 --> 00:02:11,150
+right to enable analysis of
+
+39
+00:02:11,150 --> 00:02:17,205
+seemingly unrelated information or make it difficult to compile reports automatic.
+
+40
+00:02:17,205 --> 00:02:21,475
+Well, I'm not always in the limelight showing off dashboards at company meetings,
+
+41
+00:02:21,475 --> 00:02:24,695
+I find it incredibly rewarding to create the foundations for
+
+42
+00:02:24,695 --> 00:02:27,470
+beautiful and efficient reports that my colleagues
+
+43
+00:02:27,470 --> 00:02:30,515
+know they can rely on for accurate information.
+
+44
+00:02:30,515 --> 00:02:35,870
+Knowing the principles of data modeling also positions me to play superhero for
+
+45
+00:02:35,870 --> 00:02:37,760
+my colleagues when they get stuck on
+
+46
+00:02:37,760 --> 00:02:41,510
+a Power BI reporting problem and need a nudge in the right direction.
+
+47
+00:02:41,510 --> 00:02:46,490
+I'm excited to get you started working on preparing and modeling data in Power BI.
+
+48
+00:02:46,490 --> 00:02:49,790
+My goal is to give you a strong foundation in the key concepts,
+
+49
+00:02:49,790 --> 00:02:51,860
+many of which will allow you to not only use
+
+50
+00:02:51,860 --> 00:02:54,740
+Power BI more effectively but will also give you
+
+51
+00:02:54,740 --> 00:02:57,380
+the data modeling tools that you'll be able to apply in
+
+52
+00:02:57,380 --> 00:03:00,965
+tackling a huge range of different problems with confidence.
+
+53
+00:03:00,965 --> 00:03:06,810
+Sometimes a little help from Google in your future role as data superhero and plumber.
+

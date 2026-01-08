@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:02,595
+When you're using Power BI,
+
+2
+00:00:02,595 --> 00:00:05,790
+you really don't need more than a few things.
+
+3
+00:00:05,790 --> 00:00:08,295
+But we are going to make sure that we cover
+
+4
+00:00:08,295 --> 00:00:11,365
+just a few of these before we jump in our next.
+
+5
+00:00:11,365 --> 00:00:13,799
+First of all, you'll need your computer.
+
+6
+00:00:13,799 --> 00:00:16,664
+This is generally going to be a Windows computer.
+
+7
+00:00:21,648 --> 00:00:26,238
+Secondly, you'll need the latest version of Power BI Desktop.
+
+8
+00:00:26,238 --> 00:00:29,028
+Power BI Desktop is freely available from
+
+9
+00:00:29,028 --> 00:00:34,138
+PowerBI.com and the link is readily available below as well.
+
+10
+00:00:34,268 --> 00:00:37,583
+You will require DAX Studio,
+
+11
+00:00:37,583 --> 00:00:44,108
+which is a open source tool that really augments the analysis that we can do
+
+12
+00:00:44,108 --> 00:00:47,168
+in terms of how your data model is
+

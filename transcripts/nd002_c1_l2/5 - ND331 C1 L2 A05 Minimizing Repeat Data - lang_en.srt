@@ -1,0 +1,132 @@
+1
+00:00:00,000 --> 00:00:04,530
+How do we minimize the repeat data in our model?
+
+2
+00:00:04,530 --> 00:00:08,160
+We can accomplish this goal by keeping transactions and
+
+3
+00:00:08,160 --> 00:00:13,620
+descriptions of transactions in separate tables connected by relationships.
+
+4
+00:00:13,620 --> 00:00:18,000
+In this example, rather than having one big unit table,
+
+5
+00:00:18,000 --> 00:00:22,965
+we could divide it into three separate tables.
+
+6
+00:00:22,965 --> 00:00:26,279
+Now that the data is in separate tables,
+
+7
+00:00:26,279 --> 00:00:30,150
+we can take out all of the repeat descriptive data,
+
+8
+00:00:30,150 --> 00:00:31,830
+like all the duplicate rows,
+
+9
+00:00:31,830 --> 00:00:33,945
+let's say Fuji and Gala,
+
+10
+00:00:33,945 --> 00:00:38,895
+or all of the rows that have duplicate dates and remove it.
+
+11
+00:00:38,895 --> 00:00:41,820
+But now we run into a new problem.
+
+12
+00:00:41,820 --> 00:00:44,030
+If we look at one of our sales,
+
+13
+00:00:44,030 --> 00:00:46,820
+we have the amount sold and the cost.
+
+14
+00:00:46,820 --> 00:00:50,005
+But how do we know what type of product was sold,
+
+15
+00:00:50,005 --> 00:00:51,350
+or for that matter,
+
+16
+00:00:51,350 --> 00:00:54,920
+how do we know what month or year the product was sold in?
+
+17
+00:00:54,920 --> 00:00:59,135
+We need some way of linking the data in these tables.
+
+18
+00:00:59,135 --> 00:01:03,790
+We can do this by having a unique value that is shared between the tables.
+
+19
+00:01:03,790 --> 00:01:05,540
+To identify the product,
+
+20
+00:01:05,540 --> 00:01:08,285
+we can add the unique PLU column to
+
+21
+00:01:08,285 --> 00:01:11,525
+both the sales table and the descriptive produce table.
+
+22
+00:01:11,525 --> 00:01:14,540
+Since the PLU is now in both of these tables,
+
+23
+00:01:14,540 --> 00:01:20,075
+it allows us to create a relationship connecting the descriptive and aggregatable data.
+
+24
+00:01:20,075 --> 00:01:22,555
+This is called a key.
+
+25
+00:01:22,555 --> 00:01:27,440
+A key is a column of unique values that is shared between tables.
+
+26
+00:01:27,440 --> 00:01:29,285
+With the PLU as key,
+
+27
+00:01:29,285 --> 00:01:32,240
+we can now see that these two transactions which have
+
+28
+00:01:32,240 --> 00:01:37,234
+the same PLU of 4132 were both Gala apples.
+
+29
+00:01:37,234 --> 00:01:42,665
+Similarly, if we want to be able to get information about the transactions,
+
+30
+00:01:42,665 --> 00:01:46,085
+we can add the date column to our sales table.
+
+31
+00:01:46,085 --> 00:01:51,935
+This serves as a unique key as well and allows us to connect with the date table.
+
+32
+00:01:51,935 --> 00:01:53,975
+So now, for example,
+
+33
+00:01:53,975 --> 00:01:59,460
+we can easily find out that all of these transactions took place in February.
+

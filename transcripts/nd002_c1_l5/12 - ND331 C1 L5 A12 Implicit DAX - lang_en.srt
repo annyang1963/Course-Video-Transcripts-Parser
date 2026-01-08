@@ -1,0 +1,196 @@
+1
+00:00:00,000 --> 00:00:03,630
+Let's talk now a little bit about implicit DAX.
+
+2
+00:00:03,630 --> 00:00:09,255
+These are the options that you have readily available when you right-click on a value,
+
+3
+00:00:09,255 --> 00:00:13,670
+just like we did with that 3.3 million that we saw in the demo.
+
+4
+00:00:13,670 --> 00:00:16,710
+It will initially always default to sum,
+
+5
+00:00:16,710 --> 00:00:20,580
+which is I think the most commonly used option.
+
+6
+00:00:20,580 --> 00:00:23,220
+But as you can see in this screenshot I have here,
+
+7
+00:00:23,220 --> 00:00:27,135
+there are a number of other options readily available.
+
+8
+00:00:27,135 --> 00:00:30,930
+Implicit DAX is essentially a series of
+
+9
+00:00:30,930 --> 00:00:35,595
+commonly used preset calculations that require no extra work for you.
+
+10
+00:00:35,595 --> 00:00:40,080
+They're already available in the Power BI reporting view.
+
+11
+00:00:40,080 --> 00:00:42,695
+When you're using implicit DAX,
+
+12
+00:00:42,695 --> 00:00:44,990
+you're going to have options that are very similar to
+
+13
+00:00:44,990 --> 00:00:47,545
+what you're used to an Excel, including sum,
+
+14
+00:00:47,545 --> 00:00:50,040
+average, min, just in
+
+15
+00:00:50,040 --> 00:00:52,610
+a reporting context with
+
+16
+00:00:52,610 --> 00:00:56,135
+the same general options that you're seeing on the right-hand side.
+
+17
+00:00:56,135 --> 00:00:58,460
+The caveat here is that
+
+18
+00:00:58,460 --> 00:01:04,580
+these implicit DAX options can only be used on an aggregatable column.
+
+19
+00:01:04,580 --> 00:01:08,915
+For example, you're not going to be able to use this on a text string.
+
+20
+00:01:08,915 --> 00:01:10,715
+The way that you can tell
+
+21
+00:01:10,715 --> 00:01:16,010
+whether or not the relevant column or in the reporting contexts the field
+
+22
+00:01:16,010 --> 00:01:19,325
+is an option for implicit DAX is to look for
+
+23
+00:01:19,325 --> 00:01:23,830
+the sum symbol sitting next to it on the reporting pin.
+
+24
+00:01:23,830 --> 00:01:26,885
+Let's play with implicit DAX a little bit,
+
+25
+00:01:26,885 --> 00:01:30,710
+like we talked about a little bit before on the slide.
+
+26
+00:01:30,710 --> 00:01:38,000
+When we are looking at the values and we pull them in from the fields on to the visuals,
+
+27
+00:01:38,000 --> 00:01:40,610
+you have some as your default,
+
+28
+00:01:40,610 --> 00:01:44,075
+but you have other options readily available.
+
+29
+00:01:44,075 --> 00:01:47,360
+We can leave this as some.
+
+30
+00:01:47,360 --> 00:01:57,450
+But we can also add the same value and use average.
+
+31
+00:02:00,700 --> 00:02:08,140
+We can add it again and make it the minimum,
+
+32
+00:02:09,130 --> 00:02:13,940
+and we can continue to add it as many times as we wanted.
+
+33
+00:02:13,940 --> 00:02:17,285
+We can of course add other values as well.
+
+34
+00:02:17,285 --> 00:02:22,950
+Any of these that had this little E symbol you're able to add.
+
+35
+00:02:23,300 --> 00:02:25,630
+They'll default to sum,
+
+36
+00:02:25,630 --> 00:02:30,150
+but you can make them whatever of these options you want very easily.
+
+37
+00:02:31,340 --> 00:02:35,060
+Of course, if the format like with average of
+
+38
+00:02:35,060 --> 00:02:38,875
+amount doesn't suit you or your purposes for reporting,
+
+39
+00:02:38,875 --> 00:02:41,490
+you can always adjust that.
+
+40
+00:02:41,490 --> 00:02:47,975
+The way that you adjust that is by selecting the source value and then going
+
+41
+00:02:47,975 --> 00:02:53,880
+up to the column tools
+
+42
+00:02:53,880 --> 00:02:58,400
+to adjust not the type but the format.
+
+43
+00:02:58,400 --> 00:03:04,250
+We can do this for the values by adding currency if it wasn't there already,
+
+44
+00:03:04,250 --> 00:03:07,400
+or by adjusting so that we have
+
+45
+00:03:07,400 --> 00:03:12,470
+just two decimal places rather than a seemingly infinite number.
+
+46
+00:03:12,470 --> 00:03:15,110
+One more thing that we should touch on now that we have
+
+47
+00:03:15,110 --> 00:03:18,124
+this wonderful selection of filters available,
+
+48
+00:03:18,124 --> 00:03:23,570
+is that we can go into the filter pane and make further adjustments here.
+
+49
+00:03:23,570 --> 00:03:29,220
+Something that we'll touch on as we move through filters in greater detail.
+

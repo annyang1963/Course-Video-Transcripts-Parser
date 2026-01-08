@@ -1,0 +1,252 @@
+1
+00:00:00,000 --> 00:00:05,250
+We're going to spend the rest of this course on the details of how to use Power BI.
+
+2
+00:00:05,250 --> 00:00:08,130
+But first I want to spend a few minutes talking to you
+
+3
+00:00:08,130 --> 00:00:11,535
+about when you would use it, and more specifically,
+
+4
+00:00:11,535 --> 00:00:16,440
+when would you use each of the three main components: Power Query,
+
+5
+00:00:16,440 --> 00:00:20,310
+data models, and Power BI reports?
+
+6
+00:00:20,310 --> 00:00:23,940
+So first, let's talk about Power Query.
+
+7
+00:00:23,940 --> 00:00:28,830
+Use Power Query when you need to pull data from multiple data sources,
+
+8
+00:00:28,830 --> 00:00:33,015
+and that can be either for a single report or
+
+9
+00:00:33,015 --> 00:00:38,515
+for a data model that you want to generate multiple reports off of.
+
+10
+00:00:38,515 --> 00:00:44,840
+When you want to change the table structure without changing the source.
+
+11
+00:00:44,840 --> 00:00:50,430
+When you want to set up auto-refreshes for data to keep it up to date.
+
+12
+00:00:50,430 --> 00:00:56,680
+Finally, whenever you need to get data in either Power BI or Excel.
+
+13
+00:00:56,680 --> 00:00:59,855
+Power Query isn't only used in Power BI,
+
+14
+00:00:59,855 --> 00:01:01,595
+as we've discussed earlier.
+
+15
+00:01:01,595 --> 00:01:04,520
+This is the same as what you can find in
+
+16
+00:01:04,520 --> 00:01:08,209
+the get data feature in Excel if you've used it before,
+
+17
+00:01:08,209 --> 00:01:12,545
+and can also be used to create a Data Flow and PowerBI.com.
+
+18
+00:01:12,545 --> 00:01:16,360
+So others can access data you want to make it accessible.
+
+19
+00:01:16,360 --> 00:01:20,695
+The next layer of Power BI Desktop is the data model layer.
+
+20
+00:01:20,695 --> 00:01:23,540
+Create a data model when you might otherwise
+
+21
+00:01:23,540 --> 00:01:26,330
+use a lookup function to merge data in Excel,
+
+22
+00:01:26,330 --> 00:01:28,565
+this might be VLookup,
+
+23
+00:01:28,565 --> 00:01:32,650
+XLookup, index match, whatever your preferred flavor is.
+
+24
+00:01:32,650 --> 00:01:37,070
+This is where we would use dimension tables and relationships instead to make
+
+25
+00:01:37,070 --> 00:01:43,090
+this information available while minimizing any extra work for you or your computer.
+
+26
+00:01:43,090 --> 00:01:46,280
+When you have a range of calculations that you want to be
+
+27
+00:01:46,280 --> 00:01:49,415
+able to apply in different contexts or hierarchies.
+
+28
+00:01:49,415 --> 00:01:51,980
+Say you want to be able to calculate gross profit
+
+29
+00:01:51,980 --> 00:01:55,025
+based not only on an individual time period,
+
+30
+00:01:55,025 --> 00:01:59,000
+but also different products, departments, or stores.
+
+31
+00:01:59,000 --> 00:02:03,845
+In Excel, you may end up making dozens of calculations in individual cells.
+
+32
+00:02:03,845 --> 00:02:05,450
+Where in Power BI,
+
+33
+00:02:05,450 --> 00:02:10,080
+you can use just one measure and repurpose it throughout your report.
+
+34
+00:02:10,080 --> 00:02:16,655
+Finally, when you can identify keys to support those relationships between data sources.
+
+35
+00:02:16,655 --> 00:02:19,655
+To tie data together with relationships,
+
+36
+00:02:19,655 --> 00:02:23,630
+you need a way to connect the data between those different tables.
+
+37
+00:02:23,630 --> 00:02:27,155
+Without this, you may have the need for a data model,
+
+38
+00:02:27,155 --> 00:02:29,870
+but not the raw materials to make one.
+
+39
+00:02:29,870 --> 00:02:32,975
+Finally, onto the third layer,
+
+40
+00:02:32,975 --> 00:02:35,750
+create a Power BI report.
+
+41
+00:02:35,750 --> 00:02:40,040
+When you want your reports' end users to really be able to dig
+
+42
+00:02:40,040 --> 00:02:44,735
+in and explore and analyze the data in a visually impactful way.
+
+43
+00:02:44,735 --> 00:02:47,240
+When you might otherwise make a report with
+
+44
+00:02:47,240 --> 00:02:51,940
+different versions of the same tables on multiple pages,
+
+45
+00:02:51,940 --> 00:02:55,670
+and when you have access to a data set,
+
+46
+00:02:55,670 --> 00:02:59,915
+a data flow, or a data model to support your report.
+
+47
+00:02:59,915 --> 00:03:01,865
+Like I mentioned earlier,
+
+48
+00:03:01,865 --> 00:03:05,840
+we'll be going through each of these layers step-by-step throughout the course,
+
+49
+00:03:05,840 --> 00:03:08,750
+but with a heavy emphasis on the Power Query and
+
+50
+00:03:08,750 --> 00:03:13,725
+the data model layers that ultimately support every reporting layer.
+
+51
+00:03:13,725 --> 00:03:17,515
+The reporting layers when I as a bias data plumber,
+
+52
+00:03:17,515 --> 00:03:19,680
+tend to think of as the ooh,
+
+53
+00:03:19,680 --> 00:03:21,540
+shiny part of Power BI,
+
+54
+00:03:21,540 --> 00:03:25,490
+and it's not that the reporting layer isn't incredibly important.
+
+55
+00:03:25,490 --> 00:03:28,310
+Creating a good user interface and learning how to
+
+56
+00:03:28,310 --> 00:03:31,685
+story-tell with data is crucial and valuable stuff.
+
+57
+00:03:31,685 --> 00:03:33,050
+I feel it tends to eclipse
+
+58
+00:03:33,050 --> 00:03:37,295
+the crucial foundation building that happens to make all that beauty possible.
+
+59
+00:03:37,295 --> 00:03:41,200
+You don't need to remember all of these details right now.
+
+60
+00:03:41,200 --> 00:03:45,590
+But it's valuable for you to have a general awareness of where you might apply
+
+61
+00:03:45,590 --> 00:03:51,845
+these tools so that as you learn more about preparing and modeling data in Power BI,
+
+62
+00:03:51,845 --> 00:03:54,980
+you're actively looking for opportunities to apply what
+
+63
+00:03:54,980 --> 00:03:59,190
+you learn in your own role as a Power BI professional.
+

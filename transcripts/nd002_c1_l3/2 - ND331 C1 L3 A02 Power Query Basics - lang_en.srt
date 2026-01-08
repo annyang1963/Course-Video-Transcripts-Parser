@@ -1,0 +1,212 @@
+1
+00:00:00,000 --> 00:00:01,800
+Like we discussed earlier,
+
+2
+00:00:01,800 --> 00:00:03,990
+Power BI works well with a range of
+
+3
+00:00:03,990 --> 00:00:08,475
+data sources with new sources added on an ongoing basis.
+
+4
+00:00:08,475 --> 00:00:13,725
+Some of the Power BI data sources I really want to highlight for you are databases.
+
+5
+00:00:13,725 --> 00:00:16,094
+This includes SQL Server,
+
+6
+00:00:16,094 --> 00:00:20,100
+Azure Cloud Server, Oracle databases, and many others.
+
+7
+00:00:20,100 --> 00:00:24,840
+Power BI has quite an extensive list of databases available as data sources,
+
+8
+00:00:24,840 --> 00:00:28,665
+so if your organization uses one, it's probably available.
+
+9
+00:00:28,665 --> 00:00:32,175
+Social media, things like Facebook and LinkedIn,
+
+10
+00:00:32,175 --> 00:00:35,635
+online services commonly used for businesses,
+
+11
+00:00:35,635 --> 00:00:38,825
+and the options here are also quite extensive.
+
+12
+00:00:38,825 --> 00:00:41,605
+A few of them that jumped out to me were Salesforce,
+
+13
+00:00:41,605 --> 00:00:43,875
+Google Analytics, and QuickBooks.
+
+14
+00:00:43,875 --> 00:00:51,200
+There's also a number of big data software options including Hadoop, Spark, and Impala.
+
+15
+00:00:51,200 --> 00:00:55,805
+If you've been wondering what that yellow elephant has been doing in our prior slides,
+
+16
+00:00:55,805 --> 00:00:58,495
+that's the adorable symbol of Hadoop,
+
+17
+00:00:58,495 --> 00:01:02,210
+and of course, flat files and folders that hold
+
+18
+00:01:02,210 --> 00:01:08,150
+flat files are also an important part of the Power Query source universe.
+
+19
+00:01:08,150 --> 00:01:09,920
+These are your Excel files,
+
+20
+00:01:09,920 --> 00:01:14,070
+your CSVs, PDFs, and the folders that hold them.
+
+21
+00:01:14,420 --> 00:01:18,530
+So these are some of our possible data sources,
+
+22
+00:01:18,530 --> 00:01:21,670
+but how do we actually get to the data?
+
+23
+00:01:21,670 --> 00:01:27,005
+You're Get Data options is essentially the short answer to this,
+
+24
+00:01:27,005 --> 00:01:30,470
+and it would be impossible for us to go through how to connect to each and every
+
+25
+00:01:30,470 --> 00:01:33,950
+one of them given the sheer number of options available,
+
+26
+00:01:33,950 --> 00:01:36,200
+but as a general rule of thumb,
+
+27
+00:01:36,200 --> 00:01:41,410
+your data source will probably work if the data is structured in columns and rows,
+
+28
+00:01:41,410 --> 00:01:45,215
+and if you have the necessary access rights to use it.
+
+29
+00:01:45,215 --> 00:01:48,080
+There's a range of ways that you can take
+
+30
+00:01:48,080 --> 00:01:50,870
+data that doesn't have a preset way to connect to
+
+31
+00:01:50,870 --> 00:01:56,500
+Power BI itself and still make that data accessible for your data model if you need it.
+
+32
+00:01:56,500 --> 00:01:59,930
+Some of the options available to accomplish this are
+
+33
+00:01:59,930 --> 00:02:06,170
+web APIs or connections to the web in general where you can scrape data as well.
+
+34
+00:02:06,170 --> 00:02:14,000
+You can use open database connectivity or ODBC to make a connection to a vendor.
+
+35
+00:02:14,000 --> 00:02:19,250
+You can leverage either R or Python scripts to create a data connection,
+
+36
+00:02:19,250 --> 00:02:22,970
+or you can use Power Query SDK which
+
+37
+00:02:22,970 --> 00:02:26,965
+is a way that you can create a custom data connector for Power BI.
+
+38
+00:02:26,965 --> 00:02:29,750
+Most people will never really need to use
+
+39
+00:02:29,750 --> 00:02:33,545
+these more advanced options on their various Power BI adventures,
+
+40
+00:02:33,545 --> 00:02:38,935
+but I want you to know that these possibilities are available if you want or need them.
+
+41
+00:02:38,935 --> 00:02:42,680
+So if the two things that we mentioned before were true,
+
+42
+00:02:42,680 --> 00:02:47,560
+that's the columns and row structure and necessary access rights,
+
+43
+00:02:47,560 --> 00:02:50,210
+then thankfully the general steps to get and
+
+44
+00:02:50,210 --> 00:02:53,810
+transform the data are consistent regardless of the source.
+
+45
+00:02:53,810 --> 00:02:57,535
+You'll need to tell Power Query where the data is,
+
+46
+00:02:57,535 --> 00:03:00,920
+you'll need to provide credentials for that data source,
+
+47
+00:03:00,920 --> 00:03:05,395
+you'll need to choose the source tables to pull in,
+
+48
+00:03:05,395 --> 00:03:09,320
+and you're going to want to customize in Power Query to
+
+49
+00:03:09,320 --> 00:03:14,480
+tidy things up and transform the data so it works for the report you want to generate.
+
+50
+00:03:14,480 --> 00:03:17,675
+Once the source has been imported into Power Query,
+
+51
+00:03:17,675 --> 00:03:22,520
+it really is just another query regardless of the original source.
+
+52
+00:03:22,520 --> 00:03:27,215
+The way that you make changes to the data that came in from a CSV file, for example,
+
+53
+00:03:27,215 --> 00:03:33,270
+really will be the same as what you would do to a data set from SQL or Salesforce.
+

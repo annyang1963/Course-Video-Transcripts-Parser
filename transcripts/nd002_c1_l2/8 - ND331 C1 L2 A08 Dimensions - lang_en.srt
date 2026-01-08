@@ -1,0 +1,176 @@
+1
+00:00:00,000 --> 00:00:01,620
+Onto dimensions.
+
+2
+00:00:01,620 --> 00:00:06,105
+Dimensions are the things that we use to describe our facts.
+
+3
+00:00:06,105 --> 00:00:10,080
+I really like Ralph Campbell's description of them as the who, what,
+
+4
+00:00:10,080 --> 00:00:15,570
+when, where, how, and why associated with the event or fact.
+
+5
+00:00:15,570 --> 00:00:19,360
+These descriptive components are used in reports to group,
+
+6
+00:00:19,360 --> 00:00:21,735
+summarize, and filter data.
+
+7
+00:00:21,735 --> 00:00:25,730
+If you're not sure what fields you want to include in your dimensions,
+
+8
+00:00:25,730 --> 00:00:30,200
+a good trick is to talk through what different ways you'd want
+
+9
+00:00:30,200 --> 00:00:35,075
+to slice and dice your data for reporting and look for by phrases.
+
+10
+00:00:35,075 --> 00:00:43,170
+If, for example, your boss says she wants to see all sales by fruit type, fiscal quarter,
+
+11
+00:00:43,170 --> 00:00:45,870
+and regional store location,
+
+12
+00:00:45,870 --> 00:00:50,510
+this can help you identify the fields that she will be looking for,
+
+13
+00:00:50,510 --> 00:00:53,120
+and that you'll want to ensure that you include on
+
+14
+00:00:53,120 --> 00:00:56,905
+the relevant dimensions so they're available for your report.
+
+15
+00:00:56,905 --> 00:00:59,030
+In the grocery store example,
+
+16
+00:00:59,030 --> 00:01:01,924
+you can imagine that there's a wealth of information
+
+17
+00:01:01,924 --> 00:01:05,735
+about the products being purchased on the product dimension.
+
+18
+00:01:05,735 --> 00:01:07,625
+This will be your what.
+
+19
+00:01:07,625 --> 00:01:13,810
+The timing of when the purchases were made on the date dimension, this is your when.
+
+20
+00:01:13,810 --> 00:01:18,724
+Which store a customer bought those items in on the store dimension,
+
+21
+00:01:18,724 --> 00:01:21,110
+which would serve as your where.
+
+22
+00:01:21,110 --> 00:01:26,300
+Some information on you via your loyalty card on the customer dimension,
+
+23
+00:01:26,300 --> 00:01:28,680
+which would be your who.
+
+24
+00:01:28,680 --> 00:01:32,515
+If we look at the sales transaction fact table,
+
+25
+00:01:32,515 --> 00:01:37,569
+your customer ID might be associated with many individual sales over
+
+26
+00:01:37,569 --> 00:01:43,020
+time at your local grocery store with your customer ID listed for each one.
+
+27
+00:01:43,020 --> 00:01:46,225
+But you and your customer ID number would
+
+28
+00:01:46,225 --> 00:01:49,645
+only show up once in the customer dimension table.
+
+29
+00:01:49,645 --> 00:01:52,165
+This makes it easy for us to reference
+
+30
+00:01:52,165 --> 00:01:55,690
+additional customer information about you and associate it with
+
+31
+00:01:55,690 --> 00:01:58,450
+those purchases when we need it while still
+
+32
+00:01:58,450 --> 00:02:01,985
+keeping the transactional data trim on the fact table.
+
+33
+00:02:01,985 --> 00:02:06,445
+I mentioned earlier that you want to have dimensions that are in plain
+
+34
+00:02:06,445 --> 00:02:10,840
+English rather than obscure acronyms or number codes.
+
+35
+00:02:10,840 --> 00:02:13,730
+Let's look at a concrete example.
+
+36
+00:02:13,730 --> 00:02:16,310
+Here on the left hand of the slide,
+
+37
+00:02:16,310 --> 00:02:21,535
+we have loyalty tiers for the same customer dimension that we looked at a moment ago.
+
+38
+00:02:21,535 --> 00:02:25,969
+As you can see, this tier grouping is being used to calculate
+
+39
+00:02:25,969 --> 00:02:31,235
+an average of monthly purchases for customers that fall into those categories.
+
+40
+00:02:31,235 --> 00:02:34,400
+At the bottom, you can see that the loyalty tier becomes
+
+41
+00:02:34,400 --> 00:02:38,605
+the ledger name for each of these groups' individualization.
+
+42
+00:02:38,605 --> 00:02:41,630
+Both the dimensions column name and
+
+43
+00:02:41,630 --> 00:02:46,295
+the dimensional data within the column tend to show up on the report itself.
+
+44
+00:02:46,295 --> 00:02:51,450
+It's best to make sure they are both unambiguous and easy to read.
+

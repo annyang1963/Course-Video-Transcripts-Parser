@@ -1,0 +1,416 @@
+1
+00:00:00,000 --> 00:00:01,500
+It's time to talk about
+
+2
+00:00:01,500 --> 00:00:06,270
+the Power Query formula language or as it's more commonly and lovingly known,
+
+3
+00:00:06,270 --> 00:00:10,125
+M. M is a mashup query language,
+
+4
+00:00:10,125 --> 00:00:14,835
+simply meaning that it's a language designed to help you filter and combine your data.
+
+5
+00:00:14,835 --> 00:00:18,779
+If you're curious, M is a functional programming language.
+
+6
+00:00:18,779 --> 00:00:22,000
+If you have experience working with functional languages, great.
+
+7
+00:00:22,000 --> 00:00:23,760
+If not, don't worry about it.
+
+8
+00:00:23,760 --> 00:00:27,570
+You won't need to develop a deep understanding of M code for this course.
+
+9
+00:00:27,570 --> 00:00:31,320
+We'll just look at the basics in order to give you a solid foundation.
+
+10
+00:00:31,320 --> 00:00:36,795
+You may wonder, why not just do everything with the Power Query user interface?
+
+11
+00:00:36,795 --> 00:00:42,065
+Well, the interesting thing is that as we update,
+
+12
+00:00:42,065 --> 00:00:46,730
+we make the Power Query editor create and generate M code for
+
+13
+00:00:46,730 --> 00:00:52,145
+us based on the buttons you push or the columns you add in the Power Query interface.
+
+14
+00:00:52,145 --> 00:00:53,720
+That's right, this whole time,
+
+15
+00:00:53,720 --> 00:00:58,130
+Power Query has been working hard creating M code in the background.
+
+16
+00:00:58,130 --> 00:01:01,640
+How do you see it? There are a few different ways.
+
+17
+00:01:01,640 --> 00:01:05,870
+M code is made visible on the advanced query editor that you see on the left,
+
+18
+00:01:05,870 --> 00:01:08,550
+which includes every individual step that you take.
+
+19
+00:01:08,550 --> 00:01:11,945
+But there's that more user-friendly query settings
+
+20
+00:01:11,945 --> 00:01:15,230
+pane on the right that we've played with a little bit so far,
+
+21
+00:01:15,230 --> 00:01:18,875
+which has that user-friendly interpretation of those steps.
+
+22
+00:01:18,875 --> 00:01:22,340
+However, these are two sides of the same coin.
+
+23
+00:01:22,340 --> 00:01:25,070
+You'll be able to see how each step is
+
+24
+00:01:25,070 --> 00:01:28,085
+reflected in both and when you make changes to one,
+
+25
+00:01:28,085 --> 00:01:29,765
+it'll be reflected in the other.
+
+26
+00:01:29,765 --> 00:01:31,910
+The M code in Advanced Editor can seem
+
+27
+00:01:31,910 --> 00:01:35,050
+really daunting the first time that you make use of it,
+
+28
+00:01:35,050 --> 00:01:37,400
+but it's much easier to wrap your head around
+
+29
+00:01:37,400 --> 00:01:40,030
+once you understand what the basic logic is.
+
+30
+00:01:40,030 --> 00:01:43,340
+Essentially M code is going to define the source of
+
+31
+00:01:43,340 --> 00:01:47,345
+the data that you've determined during the initial get data setup,
+
+32
+00:01:47,345 --> 00:01:53,120
+it will navigate to the specific source details such as an Excel spreadsheet tab.
+
+33
+00:01:53,120 --> 00:01:56,540
+Then it will name and notate each change using
+
+34
+00:01:56,540 --> 00:02:01,365
+the M code formula language while referencing the last step each time,
+
+35
+00:02:01,365 --> 00:02:05,770
+at which point you will continue to repeatedly add new steps for
+
+36
+00:02:05,770 --> 00:02:10,660
+each desired change until you are done with all desired query transformations.
+
+37
+00:02:10,660 --> 00:02:14,815
+As you will see, each step explicitly references the last,
+
+38
+00:02:14,815 --> 00:02:17,230
+which always makes me think of knitting where you
+
+39
+00:02:17,230 --> 00:02:19,930
+connect the prior rope stitches to the last.
+
+40
+00:02:19,930 --> 00:02:22,180
+Without this connection to the last row,
+
+41
+00:02:22,180 --> 00:02:26,090
+you end up with a hole in your knitting or an error in your M code.
+
+42
+00:02:26,090 --> 00:02:29,380
+Let's take a look at this first with some pseudocode.
+
+43
+00:02:29,380 --> 00:02:36,360
+The M code and the Advanced Editor will start with let source and define the source link.
+
+44
+00:02:36,360 --> 00:02:39,340
+Next, it will provide more specific coordinates for
+
+45
+00:02:39,340 --> 00:02:43,885
+Power Query to use to navigate to the right information in that source.
+
+46
+00:02:43,885 --> 00:02:46,340
+The easiest example of this is with Excel,
+
+47
+00:02:46,340 --> 00:02:49,330
+where there'll be the name of a tab or a table.
+
+48
+00:02:49,330 --> 00:02:52,065
+With the first applied step,
+
+49
+00:02:52,065 --> 00:02:55,235
+your M code will automatically provide a name,
+
+50
+00:02:55,235 --> 00:02:56,980
+which is what I have here in green,
+
+51
+00:02:56,980 --> 00:03:01,195
+and then it will reference the blue source info step above.
+
+52
+00:03:01,195 --> 00:03:02,870
+Then with the next step,
+
+53
+00:03:02,870 --> 00:03:04,955
+it will apply a new unique name,
+
+54
+00:03:04,955 --> 00:03:06,695
+which I have here in purple,
+
+55
+00:03:06,695 --> 00:03:09,635
+and it will again reference the prior step,
+
+56
+00:03:09,635 --> 00:03:11,105
+that is in green.
+
+57
+00:03:11,105 --> 00:03:13,430
+The same logic continues,
+
+58
+00:03:13,430 --> 00:03:19,025
+applied step three in pink with a reference to the prior step in purple,
+
+59
+00:03:19,025 --> 00:03:21,485
+and then an aquamarine step,
+
+60
+00:03:21,485 --> 00:03:27,140
+which references an applied step in pink until you close with in,
+
+61
+00:03:27,140 --> 00:03:29,710
+and then the name of the last step.
+
+62
+00:03:29,710 --> 00:03:32,390
+A little bit like weaving in the ends of
+
+63
+00:03:32,390 --> 00:03:35,185
+your code like you would if you were knitting a sweater.
+
+64
+00:03:35,185 --> 00:03:40,025
+Using the produce M code from our produce query,
+
+65
+00:03:40,025 --> 00:03:43,250
+you can see that the M code is similar to what we saw in
+
+66
+00:03:43,250 --> 00:03:46,820
+the screenshot with the same color coding that was in the last slide,
+
+67
+00:03:46,820 --> 00:03:49,085
+so it's easier for you to reference.
+
+68
+00:03:49,085 --> 00:03:52,265
+Again, we start with let and then the source,
+
+69
+00:03:52,265 --> 00:03:54,320
+then the produce sheet,
+
+70
+00:03:54,320 --> 00:03:56,495
+which is our navigation step.
+
+71
+00:03:56,495 --> 00:04:00,980
+Next, promoted headers was our first applied step here in green,
+
+72
+00:04:00,980 --> 00:04:04,880
+and you can see that it is applied to the prior step in blue.
+
+73
+00:04:04,880 --> 00:04:07,010
+Then we changed the type of
+
+74
+00:04:07,010 --> 00:04:12,470
+specific columns and that's referencing the promoted headers step in green.
+
+75
+00:04:12,470 --> 00:04:15,305
+Then we removed other columns,
+
+76
+00:04:15,305 --> 00:04:21,875
+and that step references the change type step in purple that we removed duplicates,
+
+77
+00:04:21,875 --> 00:04:26,140
+which references the removed other columns step in pink.
+
+78
+00:04:26,140 --> 00:04:33,175
+Finally, we close with in and remove duplicates to close off the M code.
+
+79
+00:04:33,175 --> 00:04:37,605
+Sometimes it's just easier to update the M code directly.
+
+80
+00:04:37,605 --> 00:04:42,635
+This is generally when it pays to know a little bit about how the M code works,
+
+81
+00:04:42,635 --> 00:04:44,685
+so you can tweak it when you want to.
+
+82
+00:04:44,685 --> 00:04:47,840
+Your two options for making updates are either
+
+83
+00:04:47,840 --> 00:04:51,410
+by making updates using the query editor pane,
+
+84
+00:04:51,410 --> 00:04:55,160
+where you can either tweak the M code in the formula bar or select
+
+85
+00:04:55,160 --> 00:04:58,010
+the little gear symbol to make updates using
+
+86
+00:04:58,010 --> 00:05:01,475
+the user interface you first use to make that step,
+
+87
+00:05:01,475 --> 00:05:06,485
+or you can also use the Advanced Query Editor to make updates.
+
+88
+00:05:06,485 --> 00:05:09,395
+This is my preferred option when I know I need to make
+
+89
+00:05:09,395 --> 00:05:14,430
+several changes and I want to see the whole picture for my query transformations.
+
+90
+00:05:14,430 --> 00:05:20,060
+You can get around needing to ever use M by just using the query settings pane.
+
+91
+00:05:20,060 --> 00:05:22,760
+But it's handy for instances where you want to add
+
+92
+00:05:22,760 --> 00:05:26,915
+multiple columns back or make other granular tweaks quickly.
+
+93
+00:05:26,915 --> 00:05:31,355
+As long as you understand the general logic and the pattern of how M works,
+
+94
+00:05:31,355 --> 00:05:33,670
+you don't need to be fluent to use it.
+
+95
+00:05:33,670 --> 00:05:36,850
+With both the query setting and Advanced Editor,
+
+96
+00:05:36,850 --> 00:05:39,815
+you'll leverage the same underlying M code,
+
+97
+00:05:39,815 --> 00:05:42,020
+you'll just experience it differently.
+
+98
+00:05:42,020 --> 00:05:46,204
+In either case, you have options to easily delete,
+
+99
+00:05:46,204 --> 00:05:52,520
+change, reorder steps or insert steps or rename steps.
+
+100
+00:05:52,520 --> 00:05:57,800
+The critical thing to keep in mind is that the order of those steps matters.
+
+101
+00:05:57,800 --> 00:06:00,985
+If you try to add a step that doesn't make sense,
+
+102
+00:06:00,985 --> 00:06:03,335
+say if you add a step that references
+
+103
+00:06:03,335 --> 00:06:06,740
+a column that doesn't exist based on the prior step,
+
+104
+00:06:06,740 --> 00:06:10,080
+Power Query will not allow you to make it.
+

@@ -1,0 +1,100 @@
+1
+00:00:00,000 --> 00:00:02,205
+If you're learning Power BI,
+
+2
+00:00:02,205 --> 00:00:05,774
+you probably work in Excel quite a lot already,
+
+3
+00:00:05,774 --> 00:00:08,775
+or maybe you have some familiarity with SQL.
+
+4
+00:00:08,775 --> 00:00:13,035
+This training assumes no experience with Power BI or SQL,
+
+5
+00:00:13,035 --> 00:00:17,355
+but it anticipates that you are comfortable with basic Excel functions,
+
+6
+00:00:17,355 --> 00:00:20,790
+such as writing common formulas in Excel to perform
+
+7
+00:00:20,790 --> 00:00:25,925
+calculations such as SUM or Average, and creating tables.
+
+8
+00:00:25,925 --> 00:00:29,160
+Familiarity with using pivot tables to analyze
+
+9
+00:00:29,160 --> 00:00:32,265
+data is also very helpful but not essential.
+
+10
+00:00:32,265 --> 00:00:37,440
+To be clear, it's not necessary for you to know SQL to succeed in this course.
+
+11
+00:00:37,440 --> 00:00:39,630
+But because SQL, M code,
+
+12
+00:00:39,630 --> 00:00:43,200
+and DAX are often just similar enough to trip you up,
+
+13
+00:00:43,200 --> 00:00:46,220
+I'll include some pointers throughout this course for those of you
+
+14
+00:00:46,220 --> 00:00:49,660
+who do have a SQL background to help you avoid getting stuck.
+
+15
+00:00:49,660 --> 00:00:53,030
+A good example that I run into whenever I'm not paying
+
+16
+00:00:53,030 --> 00:00:57,640
+attention is using double quotes instead of single ones in DAX formulas.
+
+17
+00:00:57,640 --> 00:01:00,680
+Provided you have the prerequisites I just mentioned,
+
+18
+00:01:00,680 --> 00:01:04,780
+you probably already know some data modeling before we even start.
+
+19
+00:01:04,780 --> 00:01:09,200
+A flat table, like the ones you've worked with in Excel is of simple data model.
+
+20
+00:01:09,200 --> 00:01:13,085
+So you already have some experience creating simple data models.
+
+21
+00:01:13,085 --> 00:01:16,100
+If you're familiar with common Excel functions,
+
+22
+00:01:16,100 --> 00:01:18,545
+you actually already know some DAX.
+
+23
+00:01:18,545 --> 00:01:25,765
+Common examples of measures that are identical in Excel and DAX include: SUM, IF,
+
+24
+00:01:25,765 --> 00:01:30,060
+MIN, MAX, AVERAGE, ABSOLUTE,
+
+25
+00:01:30,060 --> 00:01:34,950
+Round, and Today, although there are many others.
+

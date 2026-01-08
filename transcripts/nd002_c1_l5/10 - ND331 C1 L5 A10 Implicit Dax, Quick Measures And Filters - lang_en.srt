@@ -1,0 +1,152 @@
+1
+00:00:00,000 --> 00:00:04,125
+When it comes to reports and visuals in Power BI,
+
+2
+00:00:04,125 --> 00:00:06,555
+I'd like to think of all of them in the context
+
+3
+00:00:06,555 --> 00:00:10,930
+of each of them being filters or measures.
+
+4
+00:00:11,180 --> 00:00:15,525
+With the relationships in place from our data model,
+
+5
+00:00:15,525 --> 00:00:18,435
+we can now get started on the report including
+
+6
+00:00:18,435 --> 00:00:22,330
+any necessary calculations and measures that will go within it.
+
+7
+00:00:22,330 --> 00:00:25,590
+So what's a report and what
+
+8
+00:00:25,590 --> 00:00:29,385
+does it have to do with everything that we just built up in the data model?
+
+9
+00:00:29,385 --> 00:00:32,790
+Well, one way to think of it is that it reflects
+
+10
+00:00:32,790 --> 00:00:36,570
+the data in the model plus whatever filters are applied.
+
+11
+00:00:36,570 --> 00:00:38,820
+If you take a single value from your list of
+
+12
+00:00:38,820 --> 00:00:42,030
+field options and plop it into the reporting pane,
+
+13
+00:00:42,030 --> 00:00:44,975
+you'll get the total for the entire field.
+
+14
+00:00:44,975 --> 00:00:48,409
+We can add filters in a number of spots,
+
+15
+00:00:48,409 --> 00:00:52,045
+starting with the most obvious, the filter pane,
+
+16
+00:00:52,045 --> 00:00:59,645
+which gives you the flexibility to apply filters for a single visual an entire page.
+
+17
+00:00:59,645 --> 00:01:03,560
+So if you've noticed those tabs at the bottom of Power BI,
+
+18
+00:01:03,560 --> 00:01:06,004
+each of those constitute a page,
+
+19
+00:01:06,004 --> 00:01:10,940
+or for all the report pages within your PBIX file.
+
+20
+00:01:10,940 --> 00:01:14,990
+One way to think of those fact and dimension columns that we were looking at
+
+21
+00:01:14,990 --> 00:01:18,530
+a little bit earlier is that the dimensions generally apply
+
+22
+00:01:18,530 --> 00:01:24,410
+the filters where the facts provide the values that get calculated
+
+23
+00:01:24,410 --> 00:01:31,150
+either through explicit or implicit measures as defined by those filters.
+
+24
+00:01:31,150 --> 00:01:35,480
+Everything that you add to a reporting pane will be a reflection of
+
+25
+00:01:35,480 --> 00:01:38,750
+not only the raw materials in your data model but also
+
+26
+00:01:38,750 --> 00:01:42,310
+the additional filters you add to the report itself.
+
+27
+00:01:42,310 --> 00:01:46,550
+So you can add visuals to your report and think of
+
+28
+00:01:46,550 --> 00:01:52,220
+those visuals such as a pie chart as having groups that function as filters.
+
+29
+00:01:52,220 --> 00:01:54,770
+Imagine in a pie chart where you have
+
+30
+00:01:54,770 --> 00:01:58,845
+multiple different categories breaking up parts of the whole.
+
+31
+00:01:58,845 --> 00:02:04,760
+You can have a table with rows and columns that are functioning as filters of the data,
+
+32
+00:02:04,760 --> 00:02:10,550
+slicing and dicing it accordingly and you can use visuals called slicers that provide
+
+33
+00:02:10,550 --> 00:02:18,095
+end-users an easy functionality to select filters that you can use in the report itself.
+
+34
+00:02:18,095 --> 00:02:21,505
+While we won't be touching deeply on the reporting pane,
+
+35
+00:02:21,505 --> 00:02:24,170
+it's important to understand the mechanics of
+
+36
+00:02:24,170 --> 00:02:26,900
+these filters and measures and how they interact so
+
+37
+00:02:26,900 --> 00:02:28,130
+that you can get
+
+38
+00:02:28,130 --> 00:02:33,180
+the reporting visualizations that you need and troubleshoot them accordingly.
+

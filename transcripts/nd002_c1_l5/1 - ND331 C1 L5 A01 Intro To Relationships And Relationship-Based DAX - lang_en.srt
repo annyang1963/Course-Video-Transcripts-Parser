@@ -1,0 +1,276 @@
+1
+00:00:00,000 --> 00:00:02,565
+We've now learned how to access our data,
+
+2
+00:00:02,565 --> 00:00:06,345
+tidying it up, and transforming it to create queries that we need.
+
+3
+00:00:06,345 --> 00:00:08,850
+What we've done so far is the extract and
+
+4
+00:00:08,850 --> 00:00:12,405
+transform portion of extract, transform, and load.
+
+5
+00:00:12,405 --> 00:00:15,150
+Now, it's time to close and load
+
+6
+00:00:15,150 --> 00:00:19,990
+our carefully structured queries so they become available as tables in Power BI.
+
+7
+00:00:19,990 --> 00:00:23,120
+Every step that we've taken up to this point is to pave
+
+8
+00:00:23,120 --> 00:00:26,255
+the path for the data model that we're about to put together.
+
+9
+00:00:26,255 --> 00:00:29,600
+This lesson is about creating the relationships between
+
+10
+00:00:29,600 --> 00:00:34,030
+our tables and building the complete data model that we'll need for our report,
+
+11
+00:00:34,030 --> 00:00:37,225
+then using those relationships to create filters.
+
+12
+00:00:37,225 --> 00:00:41,030
+We'll also create calculations through what Power BI refers
+
+13
+00:00:41,030 --> 00:00:44,675
+to as measures using data analytics expressions,
+
+14
+00:00:44,675 --> 00:00:47,165
+more commonly known as DAX.
+
+15
+00:00:47,165 --> 00:00:51,905
+These enrich our reporting and enhance our visualizations.
+
+16
+00:00:51,905 --> 00:00:54,470
+The functional steps that we took to organize and
+
+17
+00:00:54,470 --> 00:00:56,810
+structure our data in the Power Query model,
+
+18
+00:00:56,810 --> 00:01:00,830
+means that we have already created the types of tables that we need.
+
+19
+00:01:00,830 --> 00:01:04,140
+These are a fact table that is long and
+
+20
+00:01:04,140 --> 00:01:09,660
+thin with just the aggregatable data and the key columns that we need,
+
+21
+00:01:09,660 --> 00:01:13,550
+one or more dimension tables that are short and fat,
+
+22
+00:01:13,550 --> 00:01:17,975
+just with the descriptive data and a unique key listed for each row,
+
+23
+00:01:17,975 --> 00:01:22,765
+which facilitates the relationship between the dimension and fact table,
+
+24
+00:01:22,765 --> 00:01:26,780
+and we also have that date dimension table.
+
+25
+00:01:26,780 --> 00:01:28,820
+This contains one row per day,
+
+26
+00:01:28,820 --> 00:01:33,470
+which serves as our unique date key and customized columns for
+
+27
+00:01:33,470 --> 00:01:38,870
+whatever time data we need for our reporting needs such as fiscal calendar weeks,
+
+28
+00:01:38,870 --> 00:01:41,720
+months, day of the week, and so on.
+
+29
+00:01:41,720 --> 00:01:45,095
+Recall from the last lesson that we learned that an important step
+
+30
+00:01:45,095 --> 00:01:48,920
+after making your date table is to mark it as a date table.
+
+31
+00:01:48,920 --> 00:01:53,285
+Otherwise, our time intelligence won't work as designed in Power BI.
+
+32
+00:01:53,285 --> 00:01:56,225
+We'll do this first thing during our demo.
+
+33
+00:01:56,225 --> 00:01:59,045
+As with our other dimension tables,
+
+34
+00:01:59,045 --> 00:02:01,850
+we'll use the date key to build a relationship between
+
+35
+00:02:01,850 --> 00:02:05,450
+the date dimension table and the fact table as well.
+
+36
+00:02:05,450 --> 00:02:12,065
+At this stage, we've also identified data types for our columns within our tables,
+
+37
+00:02:12,065 --> 00:02:14,569
+which we'll also refer to as fields,
+
+38
+00:02:14,569 --> 00:02:17,185
+especially once we get to the reporting pane.
+
+39
+00:02:17,185 --> 00:02:21,930
+The main ones we'll encounter are the date-time data types,
+
+40
+00:02:21,930 --> 00:02:23,905
+the text string data type,
+
+41
+00:02:23,905 --> 00:02:25,990
+and the number data types.
+
+42
+00:02:25,990 --> 00:02:32,140
+These data types will define how each column can be used for various filters.
+
+43
+00:02:32,140 --> 00:02:36,605
+We'll also talk about measures. What is a measure?
+
+44
+00:02:36,605 --> 00:02:40,130
+Measures are the ways that we express any of
+
+45
+00:02:40,130 --> 00:02:43,820
+our aggregatable facts or values in reporting context.
+
+46
+00:02:43,820 --> 00:02:46,490
+We've already discussed how in Power BI,
+
+47
+00:02:46,490 --> 00:02:48,920
+there's no such thing as a cell.
+
+48
+00:02:48,920 --> 00:02:51,385
+This is an extension of this concept.
+
+49
+00:02:51,385 --> 00:02:52,590
+In the same way,
+
+50
+00:02:52,590 --> 00:02:56,105
+there's no number type field expressed independently.
+
+51
+00:02:56,105 --> 00:02:58,550
+All aggregatable values pull into
+
+52
+00:02:58,550 --> 00:03:03,875
+the reporting pane in a way that it has to be expressed as part of an aggregation,
+
+53
+00:03:03,875 --> 00:03:07,354
+including min, max, average,
+
+54
+00:03:07,354 --> 00:03:09,545
+or count among others.
+
+55
+00:03:09,545 --> 00:03:14,920
+In Power BI, measures fall into three kinds of categories.
+
+56
+00:03:14,920 --> 00:03:17,674
+We have our implicit DAX measures,
+
+57
+00:03:17,674 --> 00:03:20,990
+which populate automatically in the reporting pane.
+
+58
+00:03:20,990 --> 00:03:22,895
+By default of fact,
+
+59
+00:03:22,895 --> 00:03:26,090
+pulled onto the reporting pane will be expressed as a sum,
+
+60
+00:03:26,090 --> 00:03:28,870
+though you can always update this based on your needs.
+
+61
+00:03:28,870 --> 00:03:30,965
+We have quick DAX measures,
+
+62
+00:03:30,965 --> 00:03:33,350
+which leverage more complex logic than
+
+63
+00:03:33,350 --> 00:03:37,445
+implicit measures but are commonly used and readily available.
+
+64
+00:03:37,445 --> 00:03:42,320
+Then you have the option to create your own custom DAX measures.
+
+65
+00:03:42,320 --> 00:03:45,590
+Whenever people refer to measures in Power BI,
+
+66
+00:03:45,590 --> 00:03:48,230
+this is generally what they're referring to.
+
+67
+00:03:48,230 --> 00:03:53,390
+You can use DAX to either further customize quick measures or make your own measures.
+
+68
+00:03:53,390 --> 00:03:58,130
+For this lesson, we'll focus on two functions that make
+
+69
+00:03:58,130 --> 00:04:04,440
+good use of data model relationships and filtering, Calculate, and SumX.
+

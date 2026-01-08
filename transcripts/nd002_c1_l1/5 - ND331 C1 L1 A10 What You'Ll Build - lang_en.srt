@@ -1,0 +1,192 @@
+1
+00:00:00,000 --> 00:00:02,385
+In the project at the end of this course,
+
+2
+00:00:02,385 --> 00:00:05,640
+you'll have the opportunity to demonstrate what you have
+
+3
+00:00:05,640 --> 00:00:09,749
+learned by creating a data model and Power BI report.
+
+4
+00:00:09,749 --> 00:00:15,060
+This will combine the major data preparation and modeling concepts taught in this course,
+
+5
+00:00:15,060 --> 00:00:17,730
+such as cleaning up and transforming data from
+
+6
+00:00:17,730 --> 00:00:22,155
+multiple data sources to solve a common problem in the real world.
+
+7
+00:00:22,155 --> 00:00:26,435
+Data Silo is getting in the way of effective decision-making.
+
+8
+00:00:26,435 --> 00:00:28,020
+Let me set the scene.
+
+9
+00:00:28,020 --> 00:00:31,340
+You're a junior BI developer who has just been hired by
+
+10
+00:00:31,340 --> 00:00:34,895
+Seven Sages Brewing Company up near Seattle, Washington.
+
+11
+00:00:34,895 --> 00:00:37,080
+Seven Sages has a common problem,
+
+12
+00:00:37,080 --> 00:00:41,570
+they have a lot of data that is not centrally located and they
+
+13
+00:00:41,570 --> 00:00:43,790
+need help getting everything organized so
+
+14
+00:00:43,790 --> 00:00:46,625
+they can understand their corporate profitability.
+
+15
+00:00:46,625 --> 00:00:49,760
+They know that their main flagship beer,
+
+16
+00:00:49,760 --> 00:00:51,530
+the Bamboo Grove Maibock,
+
+17
+00:00:51,530 --> 00:00:53,285
+is the most popular,
+
+18
+00:00:53,285 --> 00:00:55,370
+but it's unclear otherwise,
+
+19
+00:00:55,370 --> 00:00:59,750
+how much is being sold and what is ultimately the most profitable,
+
+20
+00:00:59,750 --> 00:01:03,570
+and if some are perhaps even losing money.
+
+21
+00:01:04,420 --> 00:01:07,565
+There's one more wrinkle with this.
+
+22
+00:01:07,565 --> 00:01:12,290
+The Seven Sages brewing company is located in Washington state,
+
+23
+00:01:12,290 --> 00:01:16,070
+but they also sell their beers in British Columbia.
+
+24
+00:01:16,070 --> 00:01:19,930
+So there's a currency exchange consideration as well,
+
+25
+00:01:19,930 --> 00:01:22,430
+and they have a fiscal calendar.
+
+26
+00:01:22,430 --> 00:01:24,455
+So for their data model,
+
+27
+00:01:24,455 --> 00:01:27,695
+they need to have a fiscal calendar as well as
+
+28
+00:01:27,695 --> 00:01:32,075
+a standard calendar incorporated into their date table.
+
+29
+00:01:32,075 --> 00:01:37,445
+We'll go over all the steps you'll need to take to make your data model.
+
+30
+00:01:37,445 --> 00:01:39,650
+Which in my experience always starts
+
+31
+00:01:39,650 --> 00:01:43,295
+with really getting a firm understanding of the data,
+
+32
+00:01:43,295 --> 00:01:47,210
+and as a newer business intelligence professional,
+
+33
+00:01:47,210 --> 00:01:51,200
+learning how to organize your data into fact,
+
+34
+00:01:51,200 --> 00:01:54,275
+dimension tables, key columns,
+
+35
+00:01:54,275 --> 00:01:57,055
+and date tables as well.
+
+36
+00:01:57,055 --> 00:02:00,800
+We'll also go through a pipeline of how you take
+
+37
+00:02:00,800 --> 00:02:04,280
+information starting from the initial source,
+
+38
+00:02:04,280 --> 00:02:06,830
+from a variety of different options.
+
+39
+00:02:06,830 --> 00:02:10,670
+Pull the information into queries and Power Query so
+
+40
+00:02:10,670 --> 00:02:15,095
+that you can perform what we call Extract, Transform, and Load.
+
+41
+00:02:15,095 --> 00:02:20,750
+Then take that information once it's been restructured so that you can organize
+
+42
+00:02:20,750 --> 00:02:26,850
+it into a data model and ultimately generate the Power BI report that you need.
+
+43
+00:02:27,230 --> 00:02:31,400
+I designed this project with several of the challenges I've seen
+
+44
+00:02:31,400 --> 00:02:35,045
+colleagues stumble over or that I've stumbled over myself.
+
+45
+00:02:35,045 --> 00:02:36,830
+When you're finished with this project,
+
+46
+00:02:36,830 --> 00:02:38,735
+you'll have demonstrated the ability to create
+
+47
+00:02:38,735 --> 00:02:44,570
+a highly functional data model that can generate insights by customers and products,
+
+48
+00:02:44,570 --> 00:02:50,640
+that incorporates currency rates and which accounts for both fiscal and calendar years.
+

@@ -1,0 +1,392 @@
+1
+00:00:00,000 --> 00:00:03,360
+Here's a look at what we'll be covering in this course.
+
+2
+00:00:03,360 --> 00:00:05,235
+We'll start with an introduction,
+
+3
+00:00:05,235 --> 00:00:08,610
+where I will try to sell you on the joy of data plumbing,
+
+4
+00:00:08,610 --> 00:00:11,025
+one of my very favorite topics.
+
+5
+00:00:11,025 --> 00:00:12,855
+We'll go through some main tools.
+
+6
+00:00:12,855 --> 00:00:16,080
+These are what I like to think of as the Power BI sandwich,
+
+7
+00:00:16,080 --> 00:00:17,850
+where you have Power Query,
+
+8
+00:00:17,850 --> 00:00:19,605
+where you load the data,
+
+9
+00:00:19,605 --> 00:00:23,565
+you've got the data modeling layer where you make relationships.
+
+10
+00:00:23,565 --> 00:00:26,340
+Then of course there's a reporting layer on top,
+
+11
+00:00:26,340 --> 00:00:31,530
+where you make all the beautiful visualizations that you know and love.
+
+12
+00:00:31,530 --> 00:00:35,060
+We'll get into a little bit greater depth with
+
+13
+00:00:35,060 --> 00:00:38,750
+that Power BI data pipeline from soup to nuts,
+
+14
+00:00:38,750 --> 00:00:43,885
+where we'll talk about how those different pieces come together and align.
+
+15
+00:00:43,885 --> 00:00:47,250
+Then we'll go into key concepts.
+
+16
+00:00:47,250 --> 00:00:52,430
+This is really where we get into the designing and structuring of a data model,
+
+17
+00:00:52,430 --> 00:00:55,130
+which is an important prerequisite before you
+
+18
+00:00:55,130 --> 00:00:58,615
+get into the technology and start moving things around.
+
+19
+00:00:58,615 --> 00:01:01,580
+We'll start with data model components,
+
+20
+00:01:01,580 --> 00:01:04,070
+which will be fact tables,
+
+21
+00:01:04,070 --> 00:01:07,160
+dimension tables, relationships, and keys.
+
+22
+00:01:07,160 --> 00:01:10,070
+Different pieces that you're going to need to connect
+
+23
+00:01:10,070 --> 00:01:14,335
+together so that your data will perform the way you want it to.
+
+24
+00:01:14,335 --> 00:01:20,075
+We'll talk about the hows and whys of data modeling and transforming the data,
+
+25
+00:01:20,075 --> 00:01:25,325
+so you'll have a better sense before we jump into using Power BI and Power Query,
+
+26
+00:01:25,325 --> 00:01:29,900
+what we're trying to accomplish and what the underlying goals are,
+
+27
+00:01:29,900 --> 00:01:33,400
+that we'll be using this technology to make happen.
+
+28
+00:01:33,400 --> 00:01:37,100
+Then we'll take our first step in using Power Query.
+
+29
+00:01:37,100 --> 00:01:39,754
+We'll be getting data and we'll explore
+
+30
+00:01:39,754 --> 00:01:46,205
+not only the Power Query basics of how you use power Query to pull in information,
+
+31
+00:01:46,205 --> 00:01:50,555
+but also all the different options that you have when it comes to Power Query.
+
+32
+00:01:50,555 --> 00:01:54,565
+You'll find that there's a lot of different ways that you can access data.
+
+33
+00:01:54,565 --> 00:01:58,245
+We'll also go through Common Data transformations.
+
+34
+00:01:58,245 --> 00:02:02,375
+Once you have that data pulled into Power Query from various sources,
+
+35
+00:02:02,375 --> 00:02:04,610
+how do you make it organized and
+
+36
+00:02:04,610 --> 00:02:08,030
+structured in a way that will align with Power Queries needs,
+
+37
+00:02:08,030 --> 00:02:11,960
+so you can understand what the data is and so that you can
+
+38
+00:02:11,960 --> 00:02:15,020
+understand where to find it and what each of
+
+39
+00:02:15,020 --> 00:02:18,665
+those things are when you pull it into the data model layer.
+
+40
+00:02:18,665 --> 00:02:21,605
+Finally, we'll talk about data types.
+
+41
+00:02:21,605 --> 00:02:24,140
+This is a really important concept because it
+
+42
+00:02:24,140 --> 00:02:27,260
+impacts everything from how filters are applied,
+
+43
+00:02:27,260 --> 00:02:32,155
+to how the data is able to be presented at the reporting level.
+
+44
+00:02:32,155 --> 00:02:35,310
+Next, we'll get into bigger transformations.
+
+45
+00:02:35,310 --> 00:02:38,075
+I have to say this is my favorite lesson.
+
+46
+00:02:38,075 --> 00:02:40,910
+It's where we really get to put our wizard hats on and
+
+47
+00:02:40,910 --> 00:02:43,700
+do some really magical things with the data.
+
+48
+00:02:43,700 --> 00:02:46,745
+We'll start with addressing errors and gaps in the data.
+
+49
+00:02:46,745 --> 00:02:50,930
+This is the cleaning of data that often needs to happen to make sure
+
+50
+00:02:50,930 --> 00:02:55,260
+that information aligns exactly with how the report needs to work,
+
+51
+00:02:55,260 --> 00:03:01,310
+while also taking care to ensure that the potential corrections that you make
+
+52
+00:03:01,310 --> 00:03:03,980
+aren't over-cleaning the data or causing
+
+53
+00:03:03,980 --> 00:03:07,955
+the information to be misleading at the reporting layer.
+
+54
+00:03:07,955 --> 00:03:11,540
+Then we'll talk about transformations across queries.
+
+55
+00:03:11,540 --> 00:03:15,380
+This is where beyond just the basics of structuring your data,
+
+56
+00:03:15,380 --> 00:03:17,779
+you can mush the data together,
+
+57
+00:03:17,779 --> 00:03:21,005
+or what I like to think of as stapling it from
+
+58
+00:03:21,005 --> 00:03:25,385
+one to the other so that everything is aligned the way you need it to.
+
+59
+00:03:25,385 --> 00:03:28,910
+You can also do cool things like unpivoting
+
+60
+00:03:28,910 --> 00:03:32,780
+the data and organizing your data in new ways,
+
+61
+00:03:32,780 --> 00:03:36,310
+splitting the data so that you have it the way that you need it.
+
+62
+00:03:36,310 --> 00:03:39,455
+What I like to think of as transfiguration.
+
+63
+00:03:39,455 --> 00:03:43,015
+We'll talk about creating date tables as well.
+
+64
+00:03:43,015 --> 00:03:45,885
+Then we'll go into creating date tables.
+
+65
+00:03:45,885 --> 00:03:47,870
+You'll find as we go through this process,
+
+66
+00:03:47,870 --> 00:03:50,465
+that date tables are a really important part
+
+67
+00:03:50,465 --> 00:03:53,405
+of the overall data model that you'll be building.
+
+68
+00:03:53,405 --> 00:03:59,120
+Specifically because this enables things like time intelligence to be used,
+
+69
+00:03:59,120 --> 00:04:02,105
+and to ensure that the date structure
+
+70
+00:04:02,105 --> 00:04:06,035
+that's used within your table aligns with your needs.
+
+71
+00:04:06,035 --> 00:04:09,655
+Next, we'll go into relationships and DAX.
+
+72
+00:04:09,655 --> 00:04:14,630
+Relationships are a really important part of the overall data model.
+
+73
+00:04:14,630 --> 00:04:18,230
+I like to think of them as creating the sinew of the data model.
+
+74
+00:04:18,230 --> 00:04:21,530
+The filters determine which direction that
+
+75
+00:04:21,530 --> 00:04:26,770
+the relationships carry key information related to the dimensions.
+
+76
+00:04:26,770 --> 00:04:30,950
+We'll talk about how DAX uses those relationships.
+
+77
+00:04:30,950 --> 00:04:34,010
+DAX is data analytics expressions,
+
+78
+00:04:34,010 --> 00:04:39,320
+and it's important calculations that we'll use within our reports and data models.
+
+79
+00:04:39,320 --> 00:04:44,705
+Then we'll get into reporting and even more DAX in our final lesson.
+
+80
+00:04:44,705 --> 00:04:47,345
+This will include other schemas,
+
+81
+00:04:47,345 --> 00:04:51,080
+situations where a standard star schema
+
+82
+00:04:51,080 --> 00:04:53,930
+doesn't really work the way that we would need it to.
+
+83
+00:04:53,930 --> 00:04:59,134
+For example, when we have more than one fact table,
+
+84
+00:04:59,134 --> 00:05:02,150
+or we need to include more than one date table,
+
+85
+00:05:02,150 --> 00:05:05,420
+or even a disconnected table to allow for
+
+86
+00:05:05,420 --> 00:05:09,445
+parameters and additional reporting considerations.
+
+87
+00:05:09,445 --> 00:05:14,075
+We'll talk about basic reporting on that final reporting layer.
+
+88
+00:05:14,075 --> 00:05:18,815
+We'll include tables, but also matrices.
+
+89
+00:05:18,815 --> 00:05:23,090
+We'll have cards, and we'll include a little bit about how to use
+
+90
+00:05:23,090 --> 00:05:28,700
+textboxes to enable you to add additional information to your report.
+
+91
+00:05:28,700 --> 00:05:32,000
+We'll talk about common DAX for reports,
+
+92
+00:05:32,000 --> 00:05:34,010
+building on the prior lesson.
+
+93
+00:05:34,010 --> 00:05:37,460
+These are things like if and switch
+
+94
+00:05:37,460 --> 00:05:42,460
+statements that you can use to add some nuance and depth to your reporting.
+
+95
+00:05:42,460 --> 00:05:48,500
+Finally, we'll go through troubleshooting for every layer of the Power BI sandwich.
+
+96
+00:05:48,500 --> 00:05:53,285
+This will allow us to ensure that you have tidied up information
+
+97
+00:05:53,285 --> 00:05:58,435
+as well as the most efficient data model and report possible,
+
+98
+00:05:58,435 --> 00:06:02,640
+based on everything that we've learned so far in this course.
+

@@ -1,0 +1,288 @@
+1
+00:00:00,000 --> 00:00:01,605
+Now that you've got
+
+2
+00:00:01,605 --> 00:00:05,740
+a solid foundation of the different components that will make up our data model,
+
+3
+00:00:05,740 --> 00:00:08,070
+let's talk about gathering your data sources with
+
+4
+00:00:08,070 --> 00:00:11,835
+colleagues and then discuss how you can think through the restructuring.
+
+5
+00:00:11,835 --> 00:00:14,820
+We've already talked through how important it is to get
+
+6
+00:00:14,820 --> 00:00:18,795
+feedback from subject matter experts when planning a report.
+
+7
+00:00:18,795 --> 00:00:21,390
+Let's get back to that meeting I took without you when we
+
+8
+00:00:21,390 --> 00:00:23,880
+started building the intuition exercise.
+
+9
+00:00:23,880 --> 00:00:26,385
+Some of the questions that I would have asked,
+
+10
+00:00:26,385 --> 00:00:29,280
+and that you should too in future meetings like this,
+
+11
+00:00:29,280 --> 00:00:32,955
+are meant to help us define the structure of the data model.
+
+12
+00:00:32,955 --> 00:00:36,870
+Things like what key data needs to be calculated in
+
+13
+00:00:36,870 --> 00:00:41,380
+the report helps us know what the facts are that we should include in our fact table.
+
+14
+00:00:41,380 --> 00:00:43,680
+How is the data grouped or filtered?
+
+15
+00:00:43,680 --> 00:00:47,490
+This gives us a clue in terms of what kind of dimensions that we need,
+
+16
+00:00:47,490 --> 00:00:50,630
+and if perhaps we need to work with them to create
+
+17
+00:00:50,630 --> 00:00:55,260
+our own groupings on the dimension table to facilitate special reporting needs.
+
+18
+00:00:55,260 --> 00:00:57,065
+The data can support,
+
+19
+00:00:57,065 --> 00:01:01,345
+but we'll need a little bit of additional logic to make possible.
+
+20
+00:01:01,345 --> 00:01:04,920
+Next, from where can we access the data?
+
+21
+00:01:04,920 --> 00:01:07,305
+This will help us to find our data sources,
+
+22
+00:01:07,305 --> 00:01:10,070
+and it will also ensure that we're not trying to build
+
+23
+00:01:10,070 --> 00:01:13,750
+something where there isn't a data source available.
+
+24
+00:01:13,750 --> 00:01:16,170
+Do we need access rights?
+
+25
+00:01:16,170 --> 00:01:19,970
+This is an often forgotten but critical question to ask.
+
+26
+00:01:19,970 --> 00:01:26,150
+For example, a SQL database connection string might be something you can get easily,
+
+27
+00:01:26,150 --> 00:01:31,225
+but it doesn't do you any good if you can't also obtain the appropriate permissions.
+
+28
+00:01:31,225 --> 00:01:34,835
+This is where the suggestion I made earlier to
+
+29
+00:01:34,835 --> 00:01:39,230
+ask for read only access can often be helpful in obtaining this.
+
+30
+00:01:39,230 --> 00:01:45,035
+Is there any sensitive data that we need to take care not to pull into the data model?
+
+31
+00:01:45,035 --> 00:01:48,350
+Security settings are outside the scope of this course,
+
+32
+00:01:48,350 --> 00:01:51,650
+but one way you can avoid needing to address them in the first place,
+
+33
+00:01:51,650 --> 00:01:53,810
+is to take care to avoid pulling in
+
+34
+00:01:53,810 --> 00:01:58,230
+any fields to your data model that contains sensitive information.
+
+35
+00:01:58,370 --> 00:02:01,995
+Finally, can we rely on the data?
+
+36
+00:02:01,995 --> 00:02:06,320
+If your subject matter experts are telling you that you can access the data from
+
+37
+00:02:06,320 --> 00:02:11,060
+somewhere but they don't trust it all the way to be reliable information,
+
+38
+00:02:11,060 --> 00:02:14,500
+this may not be the right time for this report to be made.
+
+39
+00:02:14,500 --> 00:02:17,795
+However, if the situation is that there are certain
+
+40
+00:02:17,795 --> 00:02:22,880
+known consistent errors that can be addressed holistically in the data set,
+
+41
+00:02:22,880 --> 00:02:28,495
+this is something we can do in Power Query and that we'll cover in an upcoming video.
+
+42
+00:02:28,495 --> 00:02:30,545
+In an ideal scenario,
+
+43
+00:02:30,545 --> 00:02:32,600
+you'll leave this kind of meeting with a list of
+
+44
+00:02:32,600 --> 00:02:35,860
+sources and a sense of what's available in each.
+
+45
+00:02:35,860 --> 00:02:40,955
+From there, you would review these sources to confirm they will all work in Power BI,
+
+46
+00:02:40,955 --> 00:02:44,810
+and then start thinking through you can transform it into what you need.
+
+47
+00:02:44,810 --> 00:02:47,450
+Luckily, there are a wide range of sources that
+
+48
+00:02:47,450 --> 00:02:50,375
+have custom connections already in Power BI,
+
+49
+00:02:50,375 --> 00:02:54,875
+and there are additional ways you can enable connections if for whatever reason,
+
+50
+00:02:54,875 --> 00:02:57,370
+what you need isn't readily available.
+
+51
+00:02:57,370 --> 00:03:00,410
+Power Query also gives you plenty of options for how we can
+
+52
+00:03:00,410 --> 00:03:03,935
+adjust information without impacting the source data itself.
+
+53
+00:03:03,935 --> 00:03:09,125
+You're certainly not locked in to the initial structure just because it's how it arrived.
+
+54
+00:03:09,125 --> 00:03:13,555
+There are many ways to transform data to get it how you need it to be.
+
+55
+00:03:13,555 --> 00:03:16,280
+If you can logically explain how you'd want the data
+
+56
+00:03:16,280 --> 00:03:19,115
+to change based on how it exists currently,
+
+57
+00:03:19,115 --> 00:03:22,655
+and if those changes can be applied across an entire column,
+
+58
+00:03:22,655 --> 00:03:26,850
+you're generally going to be able to make those changes using Power Query.
+
+59
+00:03:26,850 --> 00:03:28,825
+Despite all this freedom,
+
+60
+00:03:28,825 --> 00:03:32,050
+there are a few things you can't do.
+
+61
+00:03:32,050 --> 00:03:37,120
+One, you can't reference just one cell in Power Query or
+
+62
+00:03:37,120 --> 00:03:42,800
+Power BI in general because cells aren't really a thing in this technology.
+
+63
+00:03:42,800 --> 00:03:44,650
+When a transformation occurs,
+
+64
+00:03:44,650 --> 00:03:48,755
+it's generally across values in an entire column in the table.
+
+65
+00:03:48,755 --> 00:03:53,860
+Two, you can't create a report with data that doesn't exist.
+
+66
+00:03:53,860 --> 00:03:55,990
+I refer to this as vapor data.
+
+67
+00:03:55,990 --> 00:04:01,870
+Often folks just assume that data that would be useful must exist somewhere.
+
+68
+00:04:01,870 --> 00:04:03,400
+The reality, of course,
+
+69
+00:04:03,400 --> 00:04:07,765
+is that data doesn't exist unless someone took the time to track and maintain it.
+
+70
+00:04:07,765 --> 00:04:11,045
+Unfortunately, potentially useful data
+
+71
+00:04:11,045 --> 00:04:15,080
+often isn't tracked until someone decides that they want some kind of report on it.
+
+72
+00:04:15,080 --> 00:04:18,670
+It can be a bit of a catch-22.
+

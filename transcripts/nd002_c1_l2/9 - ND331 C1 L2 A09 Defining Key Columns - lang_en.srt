@@ -1,0 +1,276 @@
+1
+00:00:00,000 --> 00:00:05,730
+Key columns make it possible to connect the fact and dimension tables together.
+
+2
+00:00:05,730 --> 00:00:07,890
+Our grocery store database has
+
+3
+00:00:07,890 --> 00:00:12,965
+both a product dimension table and the aforementioned sales transaction fact table.
+
+4
+00:00:12,965 --> 00:00:17,355
+For us to be able to use all the details on the product dimension.
+
+5
+00:00:17,355 --> 00:00:20,070
+We need the fact table to have a key column with
+
+6
+00:00:20,070 --> 00:00:24,195
+values that align with our dimension tables keys as well.
+
+7
+00:00:24,195 --> 00:00:28,755
+Let's use the product key for Granny Smith apples to better understand this.
+
+8
+00:00:28,755 --> 00:00:32,610
+Customers by Granny Smith apples multiple times a day.
+
+9
+00:00:32,610 --> 00:00:36,840
+Our sales transaction table we'll need to list Granny Smith apples
+
+10
+00:00:36,840 --> 00:00:42,230
+every time to be able to connect to the product table with that key.
+
+11
+00:00:42,230 --> 00:00:46,870
+But the product table only list Granny Smith apples once.
+
+12
+00:00:46,870 --> 00:00:50,590
+If for some reason the Granny Smith apples were listed in
+
+13
+00:00:50,590 --> 00:00:54,280
+the product dimension more than once with the same product key,
+
+14
+00:00:54,280 --> 00:00:56,320
+this wouldn't really work.
+
+15
+00:00:56,320 --> 00:00:58,450
+For the same reason you would be very
+
+16
+00:00:58,450 --> 00:01:01,540
+confused if you went to the store to buy Granny Smith apples,
+
+17
+00:01:01,540 --> 00:01:04,945
+and discovered there were two unique Granny Smith apple
+
+18
+00:01:04,945 --> 00:01:10,870
+available in separate bins with no additional information or context.
+
+19
+00:01:10,870 --> 00:01:14,980
+The example we just walked through helps to demonstrate why
+
+20
+00:01:14,980 --> 00:01:18,790
+key columns can have many values with our facts,
+
+21
+00:01:18,790 --> 00:01:21,400
+but just one value on the dimension table
+
+22
+00:01:21,400 --> 00:01:24,695
+which we refer to as a one-to-many relationship.
+
+23
+00:01:24,695 --> 00:01:28,430
+Just like you'd be confused about which Granny Smith apple you should pick,
+
+24
+00:01:28,430 --> 00:01:30,920
+your data model won't understand which of
+
+25
+00:01:30,920 --> 00:01:33,320
+the two identical products to use even
+
+26
+00:01:33,320 --> 00:01:36,415
+if the additional columns it's connected to are different.
+
+27
+00:01:36,415 --> 00:01:39,110
+Whenever a fact key ties exactly with
+
+28
+00:01:39,110 --> 00:01:44,075
+a corresponding dimension key we refer to this as relational integrity.
+
+29
+00:01:44,075 --> 00:01:49,340
+Something you will want to ensure is in place every time that you build a data model.
+
+30
+00:01:49,340 --> 00:01:54,200
+Simply put, relational integrity just means that the fact tables
+
+31
+00:01:54,200 --> 00:01:59,290
+key can correctly and completely aligned with the dimension table keys.
+
+32
+00:01:59,290 --> 00:02:02,000
+You'll run into some interesting problems if you
+
+33
+00:02:02,000 --> 00:02:04,505
+have either a wrong key or a missing key.
+
+34
+00:02:04,505 --> 00:02:05,945
+Let's start with the wrong key.
+
+35
+00:02:05,945 --> 00:02:10,160
+If you have the wrong key all of your transactions will be accounted for,
+
+36
+00:02:10,160 --> 00:02:13,690
+but your report will provide the wrong information.
+
+37
+00:02:13,690 --> 00:02:17,945
+This could lead to decisions being made on incorrect data.
+
+38
+00:02:17,945 --> 00:02:24,170
+For example, if Granny Smith apples were miscoded with the artichoke code
+
+39
+00:02:24,170 --> 00:02:30,515
+on the fact table the report would show a sudden surge in artichoke sales,
+
+40
+00:02:30,515 --> 00:02:34,760
+and the manager might order a high volume of artichokes that's
+
+41
+00:02:34,760 --> 00:02:39,535
+has just no demand based on this incorrect information.
+
+42
+00:02:39,535 --> 00:02:43,190
+Any transactions that have no corresponding key for
+
+43
+00:02:43,190 --> 00:02:45,620
+a given dimension will basically be
+
+44
+00:02:45,620 --> 00:02:49,315
+orphaned when you try to summarize that data by dimension.
+
+45
+00:02:49,315 --> 00:02:56,735
+Again, if in this instance the Granny Smith code was not miscoded but just missing.
+
+46
+00:02:56,735 --> 00:02:59,600
+That would mean that sales for Granny Smith
+
+47
+00:02:59,600 --> 00:03:03,545
+could not be included in any sub total sales for fruit,
+
+48
+00:03:03,545 --> 00:03:09,650
+and instead it's going to show up where no product dimension filters are in place.
+
+49
+00:03:09,650 --> 00:03:11,705
+If you create a table by
+
+50
+00:03:11,705 --> 00:03:16,234
+grocery store product type you'll see all the working keys group correctly,
+
+51
+00:03:16,234 --> 00:03:21,745
+but Granny Smith will be on its lonesome in this awkward blank category.
+
+52
+00:03:21,745 --> 00:03:27,580
+There's one more thing that you will want to keep in mind when it comes to key columns.
+
+53
+00:03:27,580 --> 00:03:34,685
+Fact, and dimension keys must match exactly to facilitate relational integrity,
+
+54
+00:03:34,685 --> 00:03:37,820
+keys can use a combination of numbers, letters,
+
+55
+00:03:37,820 --> 00:03:41,210
+or symbols to create a unique value so much as
+
+56
+00:03:41,210 --> 00:03:47,005
+the corresponding values between both tables align exactly.
+
+57
+00:03:47,005 --> 00:03:56,405
+For the example that we've used so far this 10,001 pipe Granny Smith will work well,
+
+58
+00:03:56,405 --> 00:04:01,375
+but any mismatch between one key column and the other will cause trouble.
+
+59
+00:04:01,375 --> 00:04:03,600
+I'll give you a few examples.
+
+60
+00:04:03,600 --> 00:04:05,405
+Here's a few that won't work,
+
+61
+00:04:05,405 --> 00:04:08,990
+having the same number and pipe symbol but different
+
+62
+00:04:08,990 --> 00:04:13,325
+versions of the word Granny Smith won't result in a working key,
+
+63
+00:04:13,325 --> 00:04:19,115
+nor will to text strings where one has a space but they're otherwise identical.
+
+64
+00:04:19,115 --> 00:04:22,910
+Nor will the same number and text,
+
+65
+00:04:22,910 --> 00:04:25,345
+but with different symbols.
+
+66
+00:04:25,345 --> 00:04:27,855
+You get where I'm going with this.
+
+67
+00:04:27,855 --> 00:04:31,430
+Close but no cigar doesn't work with keys.
+
+68
+00:04:31,430 --> 00:04:33,680
+Always be precise and look for
+
+69
+00:04:33,680 --> 00:04:38,790
+these small discrepancies if you're running into key issues.
+

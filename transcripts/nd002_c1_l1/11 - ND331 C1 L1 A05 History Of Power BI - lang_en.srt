@@ -1,0 +1,256 @@
+1
+00:00:00,000 --> 00:00:02,265
+Like we discussed before,
+
+2
+00:00:02,265 --> 00:00:05,415
+Power BI is really three tools layered together.
+
+3
+00:00:05,415 --> 00:00:07,110
+You have Power Query,
+
+4
+00:00:07,110 --> 00:00:11,775
+get and transform data or what's often referred to as extract,
+
+5
+00:00:11,775 --> 00:00:15,780
+transform, and load, the data modeling layer,
+
+6
+00:00:15,780 --> 00:00:18,210
+and then finally the report layer.
+
+7
+00:00:18,210 --> 00:00:21,960
+These three layers together are pretty great set of
+
+8
+00:00:21,960 --> 00:00:25,650
+tools that empower users to work with the data that they've got,
+
+9
+00:00:25,650 --> 00:00:29,130
+rather than the data they would ideally like to have.
+
+10
+00:00:29,130 --> 00:00:32,520
+Enabling users to leverage these kinds of tools is something that
+
+11
+00:00:32,520 --> 00:00:35,745
+Microsoft has been moving towards for the better part of a decade,
+
+12
+00:00:35,745 --> 00:00:39,910
+though they were originally made available as separate technologies.
+
+13
+00:00:39,910 --> 00:00:45,770
+Let's talk briefly about how the technologies used in Power BI developed so that you
+
+14
+00:00:45,770 --> 00:00:48,380
+can better understand why it was created and
+
+15
+00:00:48,380 --> 00:00:51,320
+how it fits in with other tools in this area.
+
+16
+00:00:51,320 --> 00:00:53,420
+Starting back in 2005,
+
+17
+00:00:53,420 --> 00:00:55,430
+the vertipaq engine that drives
+
+18
+00:00:55,430 --> 00:01:00,220
+Power BI calculations was first made available as part of MS SQL.
+
+19
+00:01:00,220 --> 00:01:05,855
+The vertipaq engine functions as a ad hoc in-memory database which is
+
+20
+00:01:05,855 --> 00:01:07,910
+awfully useful when you're working on
+
+21
+00:01:07,910 --> 00:01:11,690
+a BI project and don't have a formal database to rely on.
+
+22
+00:01:11,690 --> 00:01:15,140
+But in 2010, the engine was then repurposed to
+
+23
+00:01:15,140 --> 00:01:18,680
+also serve as the guts of a new technology in the form
+
+24
+00:01:18,680 --> 00:01:22,040
+of Power Pivot and Power Query that
+
+25
+00:01:22,040 --> 00:01:26,620
+allowed Excel users to create data models with a simple atom.
+
+26
+00:01:26,620 --> 00:01:28,265
+A couple years later,
+
+27
+00:01:28,265 --> 00:01:32,540
+a visualization layer called Power View became available in Excel.
+
+28
+00:01:32,540 --> 00:01:38,150
+This was the precursor to what subsequently became the reporting layer in Power BI.
+
+29
+00:01:38,150 --> 00:01:41,870
+These three segments Power Query, Power Pivot,
+
+30
+00:01:41,870 --> 00:01:45,230
+and Power View were then packaged together into
+
+31
+00:01:45,230 --> 00:01:49,415
+Power BI to create a single application that can extract,
+
+32
+00:01:49,415 --> 00:01:51,485
+transform, and load the data,
+
+33
+00:01:51,485 --> 00:01:53,210
+then model the data,
+
+34
+00:01:53,210 --> 00:01:56,750
+and finally produce interactive reports.
+
+35
+00:01:56,750 --> 00:02:02,800
+Power BI is constantly being improved and these improvements are crowdsourced.
+
+36
+00:02:02,800 --> 00:02:05,960
+This is one of the things I really love about the software.
+
+37
+00:02:05,960 --> 00:02:08,840
+There's a whole community that's grown up around it.
+
+38
+00:02:08,840 --> 00:02:10,730
+Here we can see a screenshot of
+
+39
+00:02:10,730 --> 00:02:16,535
+the Power BI Ideas website where Microsoft actively collects data from the community.
+
+40
+00:02:16,535 --> 00:02:21,095
+In addition to lots of meetups and knowledge sharing among the users,
+
+41
+00:02:21,095 --> 00:02:24,830
+the Power BI team is also always encouraging
+
+42
+00:02:24,830 --> 00:02:29,225
+feedback and suggestions to continue meeting end-users needs.
+
+43
+00:02:29,225 --> 00:02:31,640
+They report out on these each month with
+
+44
+00:02:31,640 --> 00:02:36,845
+a monthly Power BI update on their YouTube channel so the tools are always improving.
+
+45
+00:02:36,845 --> 00:02:41,150
+As we just saw, the technologies underlying Power BI were
+
+46
+00:02:41,150 --> 00:02:45,650
+originally developed and used in other parts of the Microsoft ecosystem.
+
+47
+00:02:45,650 --> 00:02:48,260
+That means many of the things you'll learn in this course
+
+48
+00:02:48,260 --> 00:02:51,070
+for Power BI can be applied elsewhere.
+
+49
+00:02:51,070 --> 00:02:54,560
+For example, here we see that Power BI shares a lot of
+
+50
+00:02:54,560 --> 00:02:58,805
+DNA with Excel and Azure tabular data modeling.
+
+51
+00:02:58,805 --> 00:03:01,760
+Starting with Power Query and M Code,
+
+52
+00:03:01,760 --> 00:03:07,220
+these technologies are available in Excel's get data in
+
+53
+00:03:07,220 --> 00:03:14,120
+the tabular data modeling portion of Azure Analysis Services and in Power BI Desktop,
+
+54
+00:03:14,120 --> 00:03:17,035
+although their name's slightly different in Excel.
+
+55
+00:03:17,035 --> 00:03:23,160
+Similarly, the M Code that supports all of these in Power Query is equally available.
+
+56
+00:03:23,160 --> 00:03:27,700
+With tabular data modeling, the vertipaq engine,
+
+57
+00:03:27,700 --> 00:03:32,990
+DAX formulas you use to calculate on top of the vertipaq engine,
+
+58
+00:03:32,990 --> 00:03:37,550
+and the relationships that create the sinew between different models in the data model
+
+59
+00:03:37,550 --> 00:03:42,620
+itself are also available in all three of these technologies.
+
+60
+00:03:42,620 --> 00:03:49,880
+Really the only area where functionally they're going to be very different is that you
+
+61
+00:03:49,880 --> 00:03:52,280
+can develop a report that you can load to
+
+62
+00:03:52,280 --> 00:03:57,095
+PowerBI.com off of Azure Analysis Services and Power BI Desktop.
+
+63
+00:03:57,095 --> 00:04:02,060
+You can still use a Power Pivot Data Model in PowerBI.com,
+
+64
+00:04:02,060 --> 00:04:05,010
+but it's a little bit more complicated.
+

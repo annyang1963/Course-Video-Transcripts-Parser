@@ -1,0 +1,124 @@
+1
+00:00:00,000 --> 00:00:03,850
+I'm going to select the first five,
+
+2
+00:00:04,100 --> 00:00:06,645
+and then right click,
+
+3
+00:00:06,645 --> 00:00:09,855
+and I'll choose "Remove Other Columns".
+
+4
+00:00:09,855 --> 00:00:14,745
+Now, the only columns remaining are the five that I've selected.
+
+5
+00:00:14,745 --> 00:00:17,490
+Let's take a look at these data types.
+
+6
+00:00:17,490 --> 00:00:25,140
+It looks like Power BI has done us a favor and selected each of these correctly.
+
+7
+00:00:25,140 --> 00:00:29,700
+Category is chosen for type Text, so is Commodity.
+
+8
+00:00:29,700 --> 00:00:31,950
+Then over here for the PLU number,
+
+9
+00:00:31,950 --> 00:00:34,875
+it's selected this 123,
+
+10
+00:00:34,875 --> 00:00:36,660
+which means Whole Number.
+
+11
+00:00:36,660 --> 00:00:41,220
+You might ask yourself whether you should keep the PLU as a number or
+
+12
+00:00:41,220 --> 00:00:45,740
+as a text so you don't have to worry about it summing up in the report.
+
+13
+00:00:45,740 --> 00:00:49,460
+For now, I think I'm going to go ahead and leave it as a number in case I want to
+
+14
+00:00:49,460 --> 00:00:53,345
+filter produce based on PLU value ranges later on.
+
+15
+00:00:53,345 --> 00:00:57,660
+I'll just include delta sum when I get to reporting.
+
+16
+00:00:57,660 --> 00:01:00,375
+Let's move on to the Store Calendar.
+
+17
+00:01:00,375 --> 00:01:02,574
+Here on the Store Calendar,
+
+18
+00:01:02,574 --> 00:01:11,060
+I'm going to promote the headers and then I'm going to take over for Power BI with type.
+
+19
+00:01:11,060 --> 00:01:19,980
+I'm going to click here to choose Date as my selected data type for Date,
+
+20
+00:01:19,980 --> 00:01:21,735
+and for Month and Year,
+
+21
+00:01:21,735 --> 00:01:24,660
+I'm going to choose "Whole Number".
+
+22
+00:01:24,660 --> 00:01:29,100
+Whole Number gives us the option to also select greater than or less than.
+
+23
+00:01:29,100 --> 00:01:32,950
+It's useful to have the number type for both of these.
+
+24
+00:01:32,950 --> 00:01:40,020
+Finally, on Sales, I'm going to change the Date column to type Date,
+
+25
+00:01:40,020 --> 00:01:44,115
+PLU column to type Whole Number,
+
+26
+00:01:44,115 --> 00:01:48,785
+Amount to Fixed Decimal, to again,
+
+27
+00:01:48,785 --> 00:01:52,085
+avoid fractions of pennies in our calculations,
+
+28
+00:01:52,085 --> 00:01:54,965
+Cost to Fixed Decimal as well,
+
+29
+00:01:54,965 --> 00:01:59,560
+and Subtotal finally as Fixed Decimal.
+
+30
+00:01:59,560 --> 00:02:03,590
+Now I have my demo file all tidied up with the right number types,
+
+31
+00:02:03,590 --> 00:02:06,360
+and it's your turn to give it a shot.
+

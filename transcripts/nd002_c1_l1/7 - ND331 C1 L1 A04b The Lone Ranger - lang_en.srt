@@ -1,0 +1,140 @@
+1
+00:00:00,000 --> 00:00:03,930
+The first one I'd like to talk about is the lone ranger.
+
+2
+00:00:03,930 --> 00:00:08,520
+This is where you are an early adopter of Power BI,
+
+3
+00:00:08,520 --> 00:00:11,670
+and possibly the only one at your organization.
+
+4
+00:00:11,670 --> 00:00:16,860
+In this situation, your stakeholders will be your report consumers,
+
+5
+00:00:16,860 --> 00:00:19,995
+which might be clients, company leadership,
+
+6
+00:00:19,995 --> 00:00:23,985
+or simply your team if the work you do is heavily data-driven.
+
+7
+00:00:23,985 --> 00:00:28,215
+Your allies need to be anyone who holds the keys to data.
+
+8
+00:00:28,215 --> 00:00:30,555
+That might be someone in IT, for example,
+
+9
+00:00:30,555 --> 00:00:33,450
+who knows where to find the data available through SQL,
+
+10
+00:00:33,450 --> 00:00:37,095
+Access databases, SharePoint lists, etc.
+
+11
+00:00:37,095 --> 00:00:40,075
+This is someone you want to be friend, bring donuts to,
+
+12
+00:00:40,075 --> 00:00:43,730
+generally maintain a strong mutual positive relationship with,
+
+13
+00:00:43,730 --> 00:00:45,215
+they can help you a lot.
+
+14
+00:00:45,215 --> 00:00:47,630
+Your key to the data kingdom in my experience,
+
+15
+00:00:47,630 --> 00:00:50,095
+is the phrase read-only access.
+
+16
+00:00:50,095 --> 00:00:53,630
+The person who controls access to the data might be rightly
+
+17
+00:00:53,630 --> 00:00:56,960
+concerned about limiting those who can edit and intentionally,
+
+18
+00:00:56,960 --> 00:00:59,360
+or unintentionally, corrupt the data.
+
+19
+00:00:59,360 --> 00:01:02,150
+So you're far more likely to get access to
+
+20
+00:01:02,150 --> 00:01:05,330
+the data if you make it clear that you only need to read,
+
+21
+00:01:05,330 --> 00:01:07,140
+not write the data.
+
+22
+00:01:07,140 --> 00:01:11,135
+Your key challenge might be getting the foundation right without
+
+23
+00:01:11,135 --> 00:01:16,535
+an in-house mentor or team to help you troubleshoot in Power BI when you get stuck.
+
+24
+00:01:16,535 --> 00:01:18,020
+As an early adopter,
+
+25
+00:01:18,020 --> 00:01:20,930
+you are probably passionate about what could be
+
+26
+00:01:20,930 --> 00:01:24,140
+and how this technology can drive improvements in your own work,
+
+27
+00:01:24,140 --> 00:01:26,405
+your team, maybe the company as a whole.
+
+28
+00:01:26,405 --> 00:01:30,410
+All that said, this is one of those times when you need to go slow,
+
+29
+00:01:30,410 --> 00:01:32,345
+so you can go fast later on.
+
+30
+00:01:32,345 --> 00:01:35,270
+Focus on getting those key principles right first,
+
+31
+00:01:35,270 --> 00:01:39,515
+so you don't shoot yourself in the foot down the line as your data model scale.
+
+32
+00:01:39,515 --> 00:01:43,010
+On the flip side, your key opportunity is to make
+
+33
+00:01:43,010 --> 00:01:48,110
+those positive impact interactive data analytic tools so that Power BI can
+
+34
+00:01:48,110 --> 00:01:53,600
+have that positive impact on decision-making and comprehension of large data-sets,
+
+35
+00:01:53,600 --> 00:01:56,640
+potentially across your entire company.
+

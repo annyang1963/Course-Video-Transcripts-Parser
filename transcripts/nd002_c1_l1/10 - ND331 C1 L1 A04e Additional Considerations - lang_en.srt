@@ -1,0 +1,88 @@
+1
+00:00:00,000 --> 00:00:04,950
+Some additional considerations you'll need to keep in mind in all three cases.
+
+2
+00:00:04,950 --> 00:00:06,855
+First, security.
+
+3
+00:00:06,855 --> 00:00:08,925
+Who should have access to what?
+
+4
+00:00:08,925 --> 00:00:12,270
+This is important to discuss with stakeholders since
+
+5
+00:00:12,270 --> 00:00:16,410
+your data model can be used to access source data if you're not careful.
+
+6
+00:00:16,410 --> 00:00:18,915
+Second, data governance.
+
+7
+00:00:18,915 --> 00:00:22,080
+Data governance formalizes how data is used
+
+8
+00:00:22,080 --> 00:00:25,185
+and maintained based on corporate level guidelines.
+
+9
+00:00:25,185 --> 00:00:29,070
+They're generally in place for very good reasons to make sure that
+
+10
+00:00:29,070 --> 00:00:33,570
+the quality of data is good enough to support initiatives and decision-making.
+
+11
+00:00:33,570 --> 00:00:37,215
+Are there certain policies or approved datasets
+
+12
+00:00:37,215 --> 00:00:41,690
+already in place at your organization that you can use or follow?
+
+13
+00:00:41,690 --> 00:00:45,785
+Speaking as someone who's on a Data Governance team currently,
+
+14
+00:00:45,785 --> 00:00:48,770
+the people who maintain them will generally be very happy to
+
+15
+00:00:48,770 --> 00:00:53,320
+explain or clarify things with you to ensure consistent use of data.
+
+16
+00:00:53,320 --> 00:00:57,455
+Finally, are there any pre-existing data models,
+
+17
+00:00:57,455 --> 00:01:01,550
+flows, or other sources you could use to create your report?
+
+18
+00:01:01,550 --> 00:01:06,175
+This course will walk you through how to create your own data models when you need them.
+
+19
+00:01:06,175 --> 00:01:10,880
+But sometimes someone in your organization will have beaten you to the punch.
+
+20
+00:01:10,880 --> 00:01:16,520
+Powerbi.com lets you use and share data models and workspaces that you have access to.
+
+21
+00:01:16,520 --> 00:01:18,500
+That can save you time and provide
+
+22
+00:01:18,500 --> 00:01:22,740
+new opportunities to collaborate with colleagues or teams.
+

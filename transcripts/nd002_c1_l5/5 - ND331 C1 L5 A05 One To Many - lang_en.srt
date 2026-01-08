@@ -1,0 +1,156 @@
+1
+00:00:00,000 --> 00:00:03,210
+Let's talk about relationship properties.
+
+2
+00:00:03,210 --> 00:00:05,025
+Throughout this course so far,
+
+3
+00:00:05,025 --> 00:00:09,105
+every relationship example has been a one-to-many relationship,
+
+4
+00:00:09,105 --> 00:00:12,540
+with the one on the dimension side and the many on the fact side.
+
+5
+00:00:12,540 --> 00:00:16,770
+This is the relationship that you will use in almost every instance.
+
+6
+00:00:16,770 --> 00:00:20,010
+I might even go as far as to say that you're unlikely to need any of
+
+7
+00:00:20,010 --> 00:00:22,020
+the other relationship types if you're building
+
+8
+00:00:22,020 --> 00:00:24,750
+out your fact and dimension tables correctly.
+
+9
+00:00:24,750 --> 00:00:28,140
+That said, you do have some other options
+
+10
+00:00:28,140 --> 00:00:31,245
+beyond one-to-many when it comes to cardinality,
+
+11
+00:00:31,245 --> 00:00:34,575
+even if one-to-many is generally your best choice.
+
+12
+00:00:34,575 --> 00:00:39,090
+These include one-to-one and many-to-many.
+
+13
+00:00:39,090 --> 00:00:44,735
+Additionally, you can specify the direction that the relationship flows,
+
+14
+00:00:44,735 --> 00:00:49,520
+either going one way from the dimension to the facts or both ways.
+
+15
+00:00:49,520 --> 00:00:54,790
+So filters can go in either direction between the facts and dimensions.
+
+16
+00:00:54,790 --> 00:00:57,855
+Let's start with one-to-many.
+
+17
+00:00:57,855 --> 00:01:01,795
+One-to-many, with a single direction filter,
+
+18
+00:01:01,795 --> 00:01:04,025
+is the MVP of relationships.
+
+19
+00:01:04,025 --> 00:01:07,775
+In plain English, that means there's one value in a single table,
+
+20
+00:01:07,775 --> 00:01:10,355
+like the product dimension table on the left,
+
+21
+00:01:10,355 --> 00:01:14,015
+that's correlated to multiple values of another table,
+
+22
+00:01:14,015 --> 00:01:16,715
+like the sales fact table on the right.
+
+23
+00:01:16,715 --> 00:01:20,015
+It's reverse, the many-to-one means the same.
+
+24
+00:01:20,015 --> 00:01:21,530
+You just be starting with
+
+25
+00:01:21,530 --> 00:01:25,400
+the sales fact table and pointing it towards the product dimension table.
+
+26
+00:01:25,400 --> 00:01:28,550
+In general, you want the single value to be on
+
+27
+00:01:28,550 --> 00:01:32,240
+the dimension side and the many values to be on the fact side so that
+
+28
+00:01:32,240 --> 00:01:36,365
+all those good descriptive details can be listed just once and then
+
+29
+00:01:36,365 --> 00:01:41,240
+associated with as many transactions or facts as are relevant for reporting.
+
+30
+00:01:41,240 --> 00:01:44,680
+Let's make this concrete with a couple of examples.
+
+31
+00:01:44,680 --> 00:01:46,430
+Like I mentioned, on the left,
+
+32
+00:01:46,430 --> 00:01:51,545
+we have our product dimension table with each apple variety listed just once,
+
+33
+00:01:51,545 --> 00:01:55,685
+but the transaction sales listed many times on the transactions.
+
+34
+00:01:55,685 --> 00:01:57,620
+Here's Fuji apples, for example,
+
+35
+00:01:57,620 --> 00:02:02,935
+showing up once on the product dimension but multiple times on the sales fact table.
+
+36
+00:02:02,935 --> 00:02:04,265
+Then on the right,
+
+37
+00:02:04,265 --> 00:02:09,050
+we have our date dimension table with 1/31 listed just once,
+
+38
+00:02:09,050 --> 00:02:11,765
+but multiple times on the sales fact table.
+
+39
+00:02:11,765 --> 00:02:16,380
+Both of these constitute a one-to-many relationship.
+

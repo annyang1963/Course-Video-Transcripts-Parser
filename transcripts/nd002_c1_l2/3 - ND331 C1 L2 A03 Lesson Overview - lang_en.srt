@@ -1,0 +1,276 @@
+1
+00:00:00,000 --> 00:00:04,895
+This lesson's major focus is on key concepts in data modeling.
+
+2
+00:00:04,895 --> 00:00:08,850
+We'll be talking about some new terms like fact tables,
+
+3
+00:00:08,850 --> 00:00:11,640
+dimension tables and keys.
+
+4
+00:00:11,640 --> 00:00:14,700
+But before we get into all of this,
+
+5
+00:00:14,700 --> 00:00:16,875
+I'm sure some of you are wondering,
+
+6
+00:00:16,875 --> 00:00:20,100
+why are we tackling data modeling before we
+
+7
+00:00:20,100 --> 00:00:23,785
+even start loading datasets or creating our queries.
+
+8
+00:00:23,785 --> 00:00:26,025
+If you're, give yourself a gold star,
+
+9
+00:00:26,025 --> 00:00:28,290
+It's an excellent question.
+
+10
+00:00:28,290 --> 00:00:31,755
+We named this lesson key concepts and data modeling,
+
+11
+00:00:31,755 --> 00:00:35,940
+but we could have just as easily called it prep work for Power Query.
+
+12
+00:00:35,940 --> 00:00:40,360
+When we're looking at our pipeline with the queries feeding into tables,
+
+13
+00:00:40,360 --> 00:00:44,300
+it would be easy to conclude that we should start by building out
+
+14
+00:00:44,300 --> 00:00:49,100
+the queries that we will pull into the source data and feed it into the tables.
+
+15
+00:00:49,100 --> 00:00:53,210
+You might think that these queries are simply the source data as is,
+
+16
+00:00:53,210 --> 00:00:58,375
+and that this will define what will be made available in the data model.
+
+17
+00:00:58,375 --> 00:01:02,510
+That might be true in terms of how the pipeline runs.
+
+18
+00:01:02,510 --> 00:01:06,005
+But in terms of how you think about and plan your pipeline,
+
+19
+00:01:06,005 --> 00:01:08,210
+it's really the other way around.
+
+20
+00:01:08,210 --> 00:01:12,830
+You should first think about what the data model and report needs to look like,
+
+21
+00:01:12,830 --> 00:01:16,190
+and only then write the queries that pull
+
+22
+00:01:16,190 --> 00:01:20,400
+the data you need and support that foundational build.
+
+23
+00:01:20,480 --> 00:01:23,015
+As a budding data model there,
+
+24
+00:01:23,015 --> 00:01:27,230
+I want you to get into the habit of beginning with an end in mind.
+
+25
+00:01:27,230 --> 00:01:31,550
+I recommend you sketch out your data model using the raw materials you
+
+26
+00:01:31,550 --> 00:01:35,795
+have each time you're preparing to develop a report,
+
+27
+00:01:35,795 --> 00:01:38,870
+even before you open the Power BI software.
+
+28
+00:01:38,870 --> 00:01:40,520
+If you don't do this,
+
+29
+00:01:40,520 --> 00:01:43,955
+you risk a very time-consuming cycle of guessing,
+
+30
+00:01:43,955 --> 00:01:46,820
+checking, and correcting your queries.
+
+31
+00:01:46,820 --> 00:01:49,235
+While you can't loop back to change queries
+
+32
+00:01:49,235 --> 00:01:52,085
+whenever you run into issues in the data model,
+
+33
+00:01:52,085 --> 00:01:55,595
+and this is certainly something you will still run into time to time.
+
+34
+00:01:55,595 --> 00:01:58,100
+Even if your initial design was perfect,
+
+35
+00:01:58,100 --> 00:02:03,320
+such as when data changes or reports requirements change,
+
+36
+00:02:03,320 --> 00:02:06,890
+you'll still find this process a lot faster and much less
+
+37
+00:02:06,890 --> 00:02:11,735
+confusing if this rework is the exception rather than the rule.
+
+38
+00:02:11,735 --> 00:02:15,245
+With that potential source of confusion out of the way,
+
+39
+00:02:15,245 --> 00:02:18,490
+let's look at what we'll cover in this lesson.
+
+40
+00:02:18,490 --> 00:02:24,040
+In this lesson, we'll delve into the core components of data model structure.
+
+41
+00:02:24,040 --> 00:02:29,570
+First, we'll talk about the wrong way to model your data with unit tables.
+
+42
+00:02:29,570 --> 00:02:33,545
+This is where we mash everything together and create one giant,
+
+43
+00:02:33,545 --> 00:02:35,930
+very inefficient data table.
+
+44
+00:02:35,930 --> 00:02:39,710
+Then we'll talk about the main components of a data model.
+
+45
+00:02:39,710 --> 00:02:42,499
+In particular, fact tables,
+
+46
+00:02:42,499 --> 00:02:48,275
+which are tables that store our aggregatable or additive data, dimension tables,
+
+47
+00:02:48,275 --> 00:02:51,695
+which store our descriptive data, keys,
+
+48
+00:02:51,695 --> 00:02:57,170
+which provide values that we can use to create relationships between our tables.
+
+49
+00:02:57,170 --> 00:03:01,010
+We'll see that one of the key takeaways in this lesson is
+
+50
+00:03:01,010 --> 00:03:04,880
+that by separating our data into fact tables and dimension tables,
+
+51
+00:03:04,880 --> 00:03:07,505
+and then using relationships to connect them.
+
+52
+00:03:07,505 --> 00:03:10,960
+We can create much more efficient data models.
+
+53
+00:03:10,960 --> 00:03:15,035
+Planning the tables and relationships in your model is critical.
+
+54
+00:03:15,035 --> 00:03:17,240
+We'll look at how to make a simple sketch of
+
+55
+00:03:17,240 --> 00:03:20,435
+a data model before we start building anything.
+
+56
+00:03:20,435 --> 00:03:25,010
+We'll consider from a high level how we can restructure the source data.
+
+57
+00:03:25,010 --> 00:03:27,950
+Logically shifting or transforming datasets to
+
+58
+00:03:27,950 --> 00:03:31,255
+meet the needs of a data model and the resulting report.
+
+59
+00:03:31,255 --> 00:03:36,650
+Some examples of this might include merging data from one source to another,
+
+60
+00:03:36,650 --> 00:03:38,600
+or reworking how columns and rows are
+
+61
+00:03:38,600 --> 00:03:42,185
+represented in your query to meet the desired end result.
+
+62
+00:03:42,185 --> 00:03:46,400
+Finally, we'll check out how we can use the VertiPaq analyzer and
+
+63
+00:03:46,400 --> 00:03:50,995
+DAX Studio to make some of these key best practices more concrete.
+
+64
+00:03:50,995 --> 00:03:56,120
+In general, the stage we're focusing on here is one part getting your head on
+
+65
+00:03:56,120 --> 00:04:00,950
+straight and one part planning how you will communicate to the Power Query software,
+
+66
+00:04:00,950 --> 00:04:02,975
+what it is you want to accomplish.
+
+67
+00:04:02,975 --> 00:04:06,410
+In this lesson, we'll learn how to do both of those things,
+
+68
+00:04:06,410 --> 00:04:09,035
+so that when we go to create our pipeline,
+
+69
+00:04:09,035 --> 00:04:11,790
+we know exactly what we're building.
+

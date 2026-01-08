@@ -1,0 +1,128 @@
+1
+00:00:00,000 --> 00:00:02,220
+Let's briefly recap.
+
+2
+00:00:02,220 --> 00:00:06,900
+Power BI is an industry leader in business intelligence software in
+
+3
+00:00:06,900 --> 00:00:09,795
+no small part because the software is actually
+
+4
+00:00:09,795 --> 00:00:13,365
+three components in one: the Power Query layer,
+
+5
+00:00:13,365 --> 00:00:15,730
+which we use to extract, transform,
+
+6
+00:00:15,730 --> 00:00:19,110
+and load from a variety of data sources,
+
+7
+00:00:19,110 --> 00:00:20,895
+the Data Modeling layer,
+
+8
+00:00:20,895 --> 00:00:24,630
+where we build relationships between your data tables,
+
+9
+00:00:24,630 --> 00:00:26,280
+and the Reporting layer,
+
+10
+00:00:26,280 --> 00:00:30,030
+which we use to present the end-user with the data in a format they
+
+11
+00:00:30,030 --> 00:00:34,485
+can easily use to explore and better understand their data.
+
+12
+00:00:34,485 --> 00:00:38,895
+Versions of every one of these tools have been in Excel in the past.
+
+13
+00:00:38,895 --> 00:00:41,685
+Two of the three, Power Query and Power Pivot,
+
+14
+00:00:41,685 --> 00:00:44,690
+remain powerful tools you can use in Excel with
+
+15
+00:00:44,690 --> 00:00:48,785
+the same skills you'll be learning in this course for Power BI.
+
+16
+00:00:54,150 --> 00:00:56,355
+we need to take time to plan.
+
+17
+00:00:56,355 --> 00:00:59,505
+That planning has two main components.
+
+18
+00:00:59,505 --> 00:01:01,735
+First, collaboration.
+
+19
+00:01:01,735 --> 00:01:06,854
+Power BI models and reports are only as good as the inputs you have available,
+
+20
+00:01:06,854 --> 00:01:10,485
+both in terms of data sets and subject matter knowledge.
+
+21
+00:01:10,485 --> 00:01:13,185
+I'll be providing some tips on how you can work with
+
+22
+00:01:13,185 --> 00:01:16,545
+colleagues to make sure you can get the data right and how
+
+23
+00:01:16,545 --> 00:01:19,395
+you can go about making some of the more challenging judgment
+
+24
+00:01:19,395 --> 00:01:23,015
+calls when it comes to cleaning up or augmenting your data.
+
+25
+00:01:23,015 --> 00:01:27,495
+Finally, sketching your model is critical if
+
+26
+00:01:27,495 --> 00:01:31,800
+you want to be able to avoid putting all your energy into building the wrong thing.
+
+27
+00:01:31,800 --> 00:01:34,505
+We'll get some practice with this soon as well.
+
+28
+00:01:34,505 --> 00:01:36,495
+Throughout this course, will get
+
+29
+00:01:36,495 --> 00:01:40,740
+hands-on practice with all of the steps we've talked about in this lesson.
+
+30
+00:01:40,740 --> 00:01:43,455
+Being a data partner may not sound too glorious,
+
+31
+00:01:43,455 --> 00:01:46,185
+but the work you can do once you know how to prepare
+
+32
+00:01:46,185 --> 00:01:49,220
+and model your data, it's incredibly rewarding.
+
